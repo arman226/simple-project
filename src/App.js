@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
+      <NavBar />
         <Router>
           <Switch>
             <Route exact from="/" render={props => <HomePage {...props} />} />
