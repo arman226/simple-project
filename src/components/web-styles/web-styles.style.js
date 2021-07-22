@@ -44,7 +44,7 @@ export default makeStyles(theme => ({
     },
 
     typo3: {
-        fontSize: 20,
+        fontSize: 30,
         fontWeight: 100,
         color: '#000000',
     },
@@ -54,13 +54,35 @@ export default makeStyles(theme => ({
         color: '#9e9898',
     },
 
+    typo5: {
+        fontSize: 50,
+        fontWeight: 'bold',
+        color: '#ffffff',
+    },
+
+    typo6: {
+        fontSize: 30,
+        fontWeight: 100,
+        color: '#ffffff',
+    },
+
+    typo7: {
+        fontSize: 16,
+        color: '#9e9898',
+    },
+
+    typo8: {
+        fontSize: 20,
+        fontWeight: 100,
+    },
+
     paper1: {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         padding: '5px 10px',
-        margin: '10px auto',
-        color: '#ffffff',
+        margin: '5px auto',
+        backgroundColor: '#e6eaf0',
     },
 
     paper2: {
@@ -69,6 +91,15 @@ export default makeStyles(theme => ({
         alignItems: 'center',
         padding: 'auto auto',
         margin: '50px auto',
-        color: '#ffffff',
+        backgroundColor: '#ffffff',
+    },
+
+    paper3: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        padding: 'auto auto',
+        margin: '50px auto',
+        backgroundColor: '#000000',
     },
 }));
