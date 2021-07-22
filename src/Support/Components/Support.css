@@ -1,0 +1,67 @@
+
+
+.cover{
+    background-image: url('./Images/Background.jpg');
+    background-size: cover;
+    height: 560px;
+    width:100%;
+    margin-top: 0%;
+    border-top: none;
+    margin-bottom: 30px;
+}
+.title{
+    color: rgb(47, 48, 48);
+    text-align: center;
+    padding-top: 5.5rem;
+}
+.title-heading{
+    font-size: 48px;
+    line-height: 1.0416666667;
+    font-weight: 500;
+    letter-spacing: .006em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  
+}
+.searchTitle{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 26px;
+    line-height: 1.0416666667;
+    font-weight: 500;
+    letter-spacing: .006em;
+    color: rgba(102, 89, 89, 0.5)
+    
+}
+.cover1{
+    background-image: url('./Images/getsupport.jpg');
+    background-size: cover;
+    height: 560px;
+    width:100%;
+    margin-top: 0%;
+    border-top: none;
+    margin-bottom: 30px;
+}
+.header-cover1{
+    position: absolute;
+    top: 30%;
+    transform: translate(25%,-50%);
+}
+.header-cover1 h1{
+    color:#fff;
+}
+.header-cover1 .getSupport{
+    color: #fff;
+}
+.main{
+    box-sizing: border-box;
+}
+.as-imagegrid {
+    position: relative;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+.contains{
+    margin-bottom: 20px;
+}
