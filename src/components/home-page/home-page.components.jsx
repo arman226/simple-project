@@ -16,12 +16,13 @@ const HomePage = () => {
                 <Typography className={classes.typo4}>From $29.12/mo. for 24 mo. or $699 before trade-in</Typography>
                 <Typography className={classes.typo7}>Buy directly from Apple with special carrier offers</Typography>
                 <Typography className={classes.typo8}>
-                    <Link href="https://www.apple.com/iphone-12/">Learn more &gt; &nbsp;</Link>
-                    <Link href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_12">&nbsp; Buy &gt;</Link>
+                    <Link href="https://www.apple.com/iphone-12/" underline="none">Learn more &gt; &nbsp;</Link>
+                    <Link href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_12" underline="none">&nbsp; Buy &gt;</Link>
                 </Typography>
                 <img
-                    alt='iphone'
-                    src={`https://images.macrumors.com/t/jiIRguBAWDObtAWJ1gBs-5wCi_o=/800x0/smart/https://images.macrumors.com/article-new/2019/10/iphone12-lineup-wide.jpg?lossy`}
+                    alt='iphone12'
+                    src={`https://www.apple.com/v/iphone/home/az/images/overview/hero/iphone_12_non_ar__exn70uq91eeu_large.jpg`}
+                    
                 />
             </Paper>
             <Paper className={classes.paper3} elevation={0}>
@@ -30,13 +31,25 @@ const HomePage = () => {
                 <Typography className={classes.typo7}>From $41.62/mo. for 24 mo. or $999 before trade-in</Typography>
                 <Typography className={classes.typo7}>Buy directly from Apple with special carrier offers</Typography>
                 <Typography className={classes.typo8}>
-                    <Link href="https://www.apple.com/iphone-12-pro/">Learn more &gt; &nbsp;</Link>
-                    <Link href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_12_pro">&nbsp; Buy &gt;</Link>
+                    <Link href="https://www.apple.com/iphone-12-pro/" underline="none">Learn more &gt; &nbsp;</Link>
+                    <Link href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_12_pro" underline="none">&nbsp; Buy &gt;</Link>
                 </Typography>
                 <img
-                    alt='iphone'
-                    src={`https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-og-202009?wid=600&hei=315&fmt=jpeg&qlt=95&.v=1601432262000`}
-                    width= '700px'
+                    alt='iphone12-pro'
+                    src={`https://www.apple.com/v/iphone/home/az/images/overview/hero/iphone_12_pro__f7wokw1n4lm6_medium.jpg`}
+                    
+                />
+            </Paper>
+            <Paper className={classes.paper4} elevation={0}> 
+                <Typography className={classes.typo9}>International Collection</Typography>
+                <Typography className={classes.typo3}>There's a brand for every fan</Typography>
+                <Typography className={classes.typo8}>
+                    <Link href="https://www.apple.com/us/shop/goto/product/MJ583" underline="none">Shop the collection &gt;</Link>
+                </Typography>
+                <img
+                    alt='apple-watch'
+                    src={`https://scontent.xx.fbcdn.net/v/t1.15752-9/p206x206/221528847_833052724252586_568901311487163218_n.png?_nc_cat=111&ccb=1-3&_nc_sid=aee45a&_nc_eui2=AeHyZvBaRTSDjMY-LchN07jIC3-rY3VlOmQLf6tjdWU6ZCwzH_5rPYPwd9F_swVCih9_ANlpAt5pyq5lBnhl24q_&_nc_ohc=kOVrzOzHr_0AX-nmZsl&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=b2161f3b60a81f66d0c4df04de28d2c0&oe=60FDB520`}
+                    width= '1349px'
                 />
             </Paper>
         </div>
