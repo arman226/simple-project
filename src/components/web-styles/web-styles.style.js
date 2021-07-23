@@ -86,6 +86,21 @@ export default makeStyles(theme => ({
         color: '#000000',
     },
 
+    typo10: {
+        fontSize: 12,
+        marginTop: '30px',
+        marginBottom: '10px',
+        marginLeft: '210px',
+        fontWeight: 100,
+    },
+
+    typo11: {
+        fontSize: 12,
+        marginTop: '10px',
+        marginLeft: '210px',
+        fontWeight: 100,
+    },
+
     paper1: {
         display: 'flex',
         flexDirection: 'column',
@@ -121,4 +136,29 @@ export default makeStyles(theme => ({
         margin: '5px auto',
         backgroundColor: '#ffffff',
     },
+
+    paper5: {
+        display: 'flex',
+        flexDirection: 'column',
+        padding: 'auto auto',
+        margin: '5px auto',
+        backgroundColor: '#f2f2f2',
+    },
+
+    box: {
+        marginTop: '10px',
+        fontSize: 12,
+        fontWeight: 100,
+    },
+
+    box1: {
+        fontWeight: 700,
+        fontSize: 12,
+    },
+
+    divider: {
+        marginLeft: '210px',
+        marginRight: '210px',
+    },
 }));
+

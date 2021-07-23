@@ -18,8 +18,8 @@ const NavBar = () => {
                     <div className={classes.navOptions}>
                         <Chip className={classes.chip} avatar= {<AppleIcon/>}clickable='true'/>
                         <Chip className={classes.chip} clickable='true' label='Mac'/>
-                        <Chip className={classes.chip} clickable='true' label='Ipad'/>
-                        <Chip className={classes.chip} clickable='true' label='Iphone'/>
+                        <Chip className={classes.chip} clickable='true' label='iPad'/>
+                        <Chip className={classes.chip} clickable='true' label='iPhone'/>
                         <Chip className={classes.chip} clickable='true' label='Watch'/>
                         <Chip className={classes.chip} clickable='true' label='TV'/>
                         <Chip className={classes.chip} clickable='true' label='Music'/>

@@ -4,19 +4,23 @@ import HomePage from './components/home-page/home-page.components';
 import SupportPage from './components/support-page/support-page.components';
 import IphonePage from './components/apple-page/iphone-page.components';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from './components/footer/footer.components';
 
 class App extends Component {
   render() {
     return (
       <div>
-      <NavBar />
-        <Router>
-          <Switch>
-            <Route exact from="/" render={props => <HomePage {...props} />} />
-            <Route exact path="/Iphone" render={props => <IphonePage {...props} />} />
-            <Route exact path="/Support" render={props => <SupportPage {...props} />} />
-          </Switch>
-        </Router>
+      <NavBar/>
+
+      <Router>
+        <Switch>
+          <Route exact from="/" render={props => <HomePage {...props} />} />
+          <Route exact path="/Iphone" render={props => <IphonePage {...props} />} />
+          <Route exact path="/Support" render={props => <SupportPage {...props} />} />
+        </Switch>
+      </Router>
+      
+      <Footer/>
       </div>
     );
   }

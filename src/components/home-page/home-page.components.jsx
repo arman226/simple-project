@@ -13,11 +13,11 @@ const HomePage = () => {
             <Paper className={classes.paper2} elevation={0}>
                 <Typography className={classes.typo2}>iPhone 12</Typography>
                 <Typography className={classes.typo3}>Blast past fast</Typography>
-                <Typography className={classes.typo4}>From $29.12/mo. for 24 mo. or $699 before trade-in</Typography>
-                <Typography className={classes.typo7}>Buy directly from Apple with special carrier offers</Typography>
+                <Typography className={classes.typo4}>From $29.12/mo. for 24 mo. or $699 before trade-in
+                    <br/>&nbsp;Buy directly from Apple with special carrier offers</Typography>
                 <Typography className={classes.typo8}>
-                    <Link href="https://www.apple.com/iphone-12/" underline="none">Learn more &gt; &nbsp;</Link>
-                    <Link href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_12" underline="none">&nbsp; Buy &gt;</Link>
+                    <Link href="https://www.apple.com/iphone-12/" color="primary">Learn more &gt;</Link>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <Link href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_12" color="primary">Buy &gt;</Link>
                 </Typography>
                 <img
                     alt='iphone12'
@@ -28,11 +28,11 @@ const HomePage = () => {
             <Paper className={classes.paper3} elevation={0}>
                 <Typography className={classes.typo5}>iPhone 12 Pro</Typography>
                 <Typography className={classes.typo6}>It's a leap year.</Typography>
-                <Typography className={classes.typo7}>From $41.62/mo. for 24 mo. or $999 before trade-in</Typography>
-                <Typography className={classes.typo7}>Buy directly from Apple with special carrier offers</Typography>
+                <Typography className={classes.typo7}>From $41.62/mo. for 24 mo. or $999 before trade-in
+                    <br/>&nbsp;Buy directly from Apple with special carrier offers</Typography>
                 <Typography className={classes.typo8}>
-                    <Link href="https://www.apple.com/iphone-12-pro/" underline="none">Learn more &gt; &nbsp;</Link>
-                    <Link href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_12_pro" underline="none">&nbsp; Buy &gt;</Link>
+                    <Link href="https://www.apple.com/iphone-12-pro/" color="primary">Learn more &gt;</Link>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <Link href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_12_pro" color="primary">Buy &gt;</Link>
                 </Typography>
                 <img
                     alt='iphone12-pro'
@@ -44,7 +44,7 @@ const HomePage = () => {
                 <Typography className={classes.typo9}>International Collection</Typography>
                 <Typography className={classes.typo3}>There's a brand for every fan</Typography>
                 <Typography className={classes.typo8}>
-                    <Link href="https://www.apple.com/us/shop/goto/product/MJ583" underline="none">Shop the collection &gt;</Link>
+                    <Link href="https://www.apple.com/us/shop/goto/product/MJ583" color="primary">Shop the collection &gt;</Link>
                 </Typography>
                 <img
                     alt='apple-watch'
@@ -54,6 +54,6 @@ const HomePage = () => {
             </Paper>
         </div>
     )
-};
+}
 
 export default HomePage;
