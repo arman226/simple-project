@@ -134,7 +134,7 @@ export default makeStyles(theme => ({
         alignItems: 'center',
         padding: 'auto auto',
         margin: '5px auto',
-        backgroundColor: '#ffffff',
+        backgroundColor: '#fff',
     },
 
     paper5: {

@@ -2,7 +2,7 @@ import React, { Component}  from 'react';
 import NavBar from './components/navigation-bar/navigation-bar.components';
 import HomePage from './components/home-page/home-page.components';
 import SupportPage from './components/support-page/support-page.components';
-import IphonePage from './components/apple-page/iphone-page.components';
+import IphonePage from './components/iphone-page/iphone-page.components';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from './components/footer/footer.components';
 
