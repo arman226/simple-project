@@ -1,4 +1,11 @@
 body {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #1d1d1f;
+    font-style: normal;
     background-color: #f2f2f2;
 }
 .main{
@@ -19,13 +26,17 @@ body {
 
 .hero-dark {
     background-image: url("./img/iPhone-12-black.jpg");
-    width: 1505px;
+    width: 1460px;
     height: 601px;
     background-size: 1505px 601px;
     background-repeat: no-repeat;
     position: relative;
     left: 50%;
     margin-left: -525.5px;
+}
+
+.color {
+    color: #008009;
 }
 
 .large-12{
@@ -38,12 +49,54 @@ body {
     max-width: 58.33333%;
 }
 
+.large-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.large-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.large-order-1 {
+    order: 1;
+}
+
+.large-order-0 {
+    order: 0;
+}
+
 .figure {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
+}
+
+.content-wrapper {
+    background: #fff;
+    padding: 95px 45px 94px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.apple-card-content-wrapper {
+    position: relative;
+    background: #fff;
+    padding: 83px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 562px;
+}
+
+.tile-trade-in-content-wrapper {
+    background: #fff;
+    padding: 0 50px;
+    padding-top: 13px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -55,6 +108,47 @@ body {
     box-sizing: border-box;
     margin-bottom: 61px;
 
+}
+
+.tile-trade-in-copy-wrapper {
+    max-width: 455px;
+}
+
+.copy-wrapper-row {
+    max-width: 1078px;
+    justify-content: space-around;
+}
+
+.cta-wrapper {
+    margin-top: 17px;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.column {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 0px;
+}
+
+.column-copy {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .large-centered {
@@ -77,6 +171,11 @@ body {
     text-align: center;
 }
 
+.section-retail {
+    text-align: center;
+    padding-top: 110px;
+}
+
 .eyebrow {
     font-size: 24px;
     line-height: 1.16667;
@@ -92,6 +191,14 @@ body {
     font-weight: 600;
     letter-spacing: -.003em;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.tile-headline {
+    margin-top: 52px;
+}
+
+.headline-wrapper {
+    margin-bottom: 35px;
 }
 
 .copy {
@@ -269,6 +376,22 @@ body {
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
+.typography-section-headline {
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.typography-title-headline {
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
 .typography-body-reduced-1 {
     margin-top: 0;
     margin-left: 45px;
@@ -319,7 +442,21 @@ body {
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
+.typography-tile-copy {
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
 
+.tile-copy {
+    margin-top: 22px;
+}
+
+.cta-button {
+    margin-bottom: 52px;
+}
 
 .button {
     cursor: pointer;
@@ -339,6 +476,19 @@ body {
     border-radius: 980px;
     background: #0071e3;
     color: #fff;
+}
+
+.button-super {
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    min-width: 28px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 
@@ -472,6 +622,124 @@ body {
     background-repeat: no-repeat;
     background-image: url("./img/magsafe-12.png");
 }
+
+.logo-att {
+    width: 126px;
+    height: 53px;
+    background-size: 126px 53px;
+    background-repeat: no-repeat;
+    background-image: url("./img/logo-att.jpg");
+    position: relative;
+    left: 50%;
+    margin-left: -63px;
+}
+
+.logo-t-mobile {
+    width: 219px;
+    height: 61px;
+    background-size: 219px 61px;
+    background-repeat: no-repeat;
+    background-image: url("./img/logo-tmobile.jpg");
+    position: relative;
+    left: 50%;
+    margin-left: -109.5px;
+}
+
+.logo-verizon {
+    width: 119px;
+    height: 53px;
+    background-size: 119px 53px;
+    background-repeat: no-repeat;
+    background-image: url("./img/logo-verizon.jpg");
+    position: relative;
+    left: 50%;
+    margin-left: -59.5px;
+}
+
+.apple-card {
+    width: 827px;
+    height: 452px;
+    background-size: 827px 452px;
+    background-repeat: no-repeat;
+    background-image: url("./img/apple-card.jpg");
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+
+.trade-in-image {
+    width: 675px;
+    height: 362px;
+    background-size: 675px 362px;
+    background-repeat: no-repeat;
+    background-image: url("./img/trade-in.jpg");
+    position: relative;
+    left: 50%;
+    margin-left: -337.5px;
+    margin-bottom: 9px;
+}
+
+.upgrade-image {
+    width: 675px;
+    height: 261px;
+    background-size: 675px 261px;
+    background-repeat: no-repeat;
+    background-image: url("./img/upgrade-image.jpg");
+    position: relative;
+    left: 50%;
+    margin-left: -337.5px;
+    margin-top: 55px;
+}
+
+.two-up-tile-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+}
+
+.image-wrapper {
+    min-height: 256px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 42px;
+}
+
+.left {
+    padding-right: 15px;
+}
+
+.right {
+    padding-left: 15px;
+}
+
+.flex-tile-wrapper {
+    width: auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.full-width-tile-wrapper {
+    text-align: center;
+    flex-grow: 2;
+    width: auto;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.carrier-block {
+    max-width: 375px;
+}
+
 
 h4 {
     margin-top: 35px;

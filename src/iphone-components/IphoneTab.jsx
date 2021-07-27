@@ -224,11 +224,106 @@ const classes = useStyles();
                         </Grid>
                     </Grid>
                 </div>
-
+            </div>
+            <div className="section-content section-retail">
+                <h2 className="typography-section-headline large-centered">Ways to Buy iPhone</h2>
+                    <div className="flex-tile-wrapper row">
+                        <div className="full-width-tile-wrapper large-12">
+                            <div className="content-wrapper">
+                                <div className="headline-wrapper large-12 large-centered">
+                                    <h3 className="eyebrow large-12 ">The latest carrier deals.
+                                        <span className="color"> Directly from Apple.</span>
+                                    </h3>
+                                    <p className="typography-title-headline">Save up to $700 on the newest iPhone after trade-in
+                                        <sup className="footnote footnote-number">
+                                            5
+                                        </sup>
+                                    </p>
+                                </div>
+                                <div className="row large-centered copy-wrapper-row">
+                                    <div className="large-3 carrier-block">
+                                        <figure className="logo-att"></figure>
+                                        <p className="typography-tile-copy tile-copy large-12">Save up to $700</p>
+                                    </div>
+                                    <div className="large-3 carrier-block">
+                                        <figure className="logo-t-mobile"></figure>
+                                        <p className="typography-tile-copy tile-copy large-12">Save up to $330</p>
+                                    </div>
+                                    <div className="large-3 carrier-block">
+                                        <figure className="logo-verizon"></figure>
+                                        <p className="typography-tile-copy tile-copy large-12">Save up to $440</p>
+                                    </div>
+                                </div>
+                                <div className="cta-wrapper offer">
+                                    <p className="large-3 large-centered cta-button">
+                                        <button className="button button-super">Find your offer</button>
+                                    </p>
+                                    <p className="large-12 large-centered">Our Specialists can help you shop — online or in store. 
+                                        <Link href="#" className={classes.link}>
+                                            Chat with an iPhone Specialist
+                                        </Link>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="full-width-tile-wrapper large 12">
+                            <div className="apple-card-content-wrapper row">
+                                <div className="column image-wrapper large-6 large-order-1">
+                                    <figure className="apple-card"></figure>
+                                </div>
+                                <div className="column column-copy large-6 large-centered large-order-0">
+                                    <div className="copy-wrapper">
+                                        <h3 className="typography-tile-headline large-centered">Get 3% Daily Cash back with Apple Card.</h3>
+                                        <p className="typography-tile-copy large-centered">And pay for your new iPhone over 24months, interest-free when you choose to check out with Apple Card Monthly Installments.</p>
+                                        <Link href="#" className={classes.link}>
+                                            Learn More
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="tile-wrapper two-up-tile-wrapper left large-6">
+                            <div className="tile-trade-in-content-wrapper large-centered">
+                                <div className="tile-trade-in-copy-wrapper large-centered">
+                                    <h3 className="typography-title-headline tile-headline large-centered">Trade in your smartphone for credit.</h3>
+                                    <p className="typography-tile-copy tile-copy large-centered">With Apple Trade In, you can get credit toward a new iPhone when you trade in an eligible smartphone.
+                                        <sup className="footnote footnote-number">
+                                            6
+                                        </sup>
+                                        It's good for you and the planet.
+                                    </p>
+                                    <Link href="#" className={classes.link}>
+                                        Learn More
+                                    </Link>
+                                </div>
+                                <div>
+                                    <figure className="trade-in-image"></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="tile-wrapper two-up-tile-wrapper right large-6">
+                            <div className="tile-trade-in-content-wrapper large-centered">
+                                <div className="tile-trade-in-copy-wrapper large-centered">
+                                    <h3 className="typography-title-headline tile-headline large-centered">The easiest way to upgrade to the latest iPhone.</h3>
+                                    <p className="typography-tile-copy tile-copy large-centered">Join the iPhone Upgrade Program to get the latest iPhone every year, low monthly payments, and AppleCare+.
+                                        <sup className="footnote footnote-number">
+                                            7
+                                        </sup>
+                                    </p>
+                                    <Link href="#" className={classes.link}>
+                                        Learn More
+                                    </Link>
+                                </div>
+                                <div>
+                                    <figure className="upgrade-image"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
             
     )
 }
 
-export default IphoneTab
+export default IphoneTab;
