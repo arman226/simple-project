@@ -29,7 +29,16 @@ export default makeStyles((theme)=>({
           },
           paper: {
             padding: theme.spacing(7),
-
+          },
+          sides:{
+            justifyContent: "flex-start",
+            alignItems:"flex-start"
+          },
+          contains:{
+            padding: theme.spacing(3),
+          },
+          down:{
+              marginTop: theme.spacing(0)
           },
           roots:{
             '& .MuiTextField-root': {
