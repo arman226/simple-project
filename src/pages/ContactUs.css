@@ -29,7 +29,27 @@ video {
 }
 
 .wrapper-column {
-    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper-column .max {
+    max-width: 1200px;
+}
+
+.wrapper-column .width {
+    width: 88%;
+}
+
+.x-column {
+    position: relative;
+    z-index: 1;
+    float: left;
+    margin-right: 4%;
+}
+
+.x-column .x-1-2 {
+    width: 48%;
 }
 
 .typography-title {

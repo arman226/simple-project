@@ -24,9 +24,13 @@ const ContactUs = () => {
         <div className="wrapper">
           <h1 className="typography-title">Let's Start a Conversation</h1>
         </div>
-        <div className="wrapper-column">
-          <h1>Ask how we can help you:</h1>
-          <p>See our platform in action</p>
+        <div className="wrapper-column max width">
+          <div className="x-column x-sm x-1-2">
+            <div>
+              <h1>Ask how we can help you:</h1>
+              <p>See our platform in action</p>
+            </div>
+          </div>
         </div>
       </div>
 
