@@ -20,3 +20,49 @@ This project is to train the interns on Git operations
 3. **material-ui** `npm i @material-ui/core`
 4. **reactstrap** `npm install --save reactstrap`
 5. **bootstrap** `npm install bootstrap --save`
+
+## FOLDER STRUCTURE
+
+1. **components** This contains all presentational components that are reusable to different web pages.
+2. **routes** This contains the navigation configuration accross the entire website.
+3. **pages** This contains all the web pages.
+4. **styles** This contains global styling settings/configuration such as, but not limited to, colors and dimens (for sizes)
+5. **assets** This contains all images, fonts and other media files.
+
+### RUNNING THE PROJECT
+
+After cloning the project, make it sure that all dependencies are installed:
+
+`npm install`
+
+If the installation is successful, run the app by exucuting the script below:
+
+`npm start`.
+
+### MAKING CHANGES
+
+Before writing any code, you have to make it sure that the base branch or `master` is always up-to-date. To do that you have to `pull` the latest version of the branch:
+
+`git pull origin master`.
+
+After updating the master branch, create a separate branch to store your changes,
+
+`git checkout -b feature/${your-branch-name}`
+
+after writing and testing your code, stage all your changes...
+
+`git add .`,
+
+commit...
+
+`git commit -m "${descriptive explaination about your changes or diffs}"`
+
+and, finally, push
+
+`git push origin feature/${your-branch-name}`
+
+ENJOY CODING!
+
+Regards,
+
+**ARMANDO I. BIBAY JR.**

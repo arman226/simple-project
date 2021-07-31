@@ -12,7 +12,7 @@ const ContactUs = () => {
   return(
       <div>
         <div className ="hero-container">
-        <video src='/video/video-1.mp4' autoPlay loop muted></video>
+        <video src='../assets/video/video-1.mp4' autoPlay loop muted></video>
         <Collapse 
           in ={checked}
           {... (checked ? { timeout: 1000 } : {})}
