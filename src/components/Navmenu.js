@@ -35,7 +35,7 @@ const NavMenu = () => {
     <AppBar
       elevation={0}
       position='fixed'
-      style={{ boxShadow: "none", background: COLORS.WHITE }}
+      style={{ boxShadow: "none", background: COLORS.GREEN2 }}
     >
       <Navbar
         className='navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow'
@@ -44,7 +44,7 @@ const NavMenu = () => {
         <Container>
           <NavbarBrand tag={Link} to='/'>
             <div>
-              <Typography className={classes.title}>Basic App</Typography>
+              <Typography className={classes.title}>John Doe</Typography>
             </div>
           </NavbarBrand>
           <NavbarToggler
@@ -80,8 +80,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     fontWeight: "bold",
     fontSize: 25,
-    color: COLORS.BLACK,
+    color: COLORS.WHITE,
     fontFamily: "Pathway Gothic One",
   },
+
 }));
 export default NavMenu;
