@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css'
+import './Home.css'
 import {makeStyles,Container,Paper, Typography,Button,Grid, Box,Divider,
 Card,CardActionArea,CardContent,CardMedia,CardActions} from '@material-ui/core'
 import backgrounds from '../assets/image/eco-friendly.jpg'

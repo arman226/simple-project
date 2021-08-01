@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
+<<<<<<< HEAD
 .homepage-background{
   background-image: url('./assets/image/background.jpg');
   background-size: cover;
@@ -60,3 +61,5 @@
   margin-bottom: 20px;
   margin-left: 30px;
 }
+=======
+>>>>>>> 598a4f9c2a37abeaa2a45db53cb98d0aaad22b47
