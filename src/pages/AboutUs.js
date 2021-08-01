@@ -1,8 +1,7 @@
-import { Paper, Typography, makeStyles } from "@material-ui/core";
 import React from "react";
+import { Paper, Typography, makeStyles, Card, CardMedia } from "@material-ui/core";
 import { COLORS } from "../styles/color.styles";
-import plant from "../assets/image/plant.jpg";
-
+import "../assets/image/plant.jpg";
 const AboutUs = () => {
 const classes = useStyles();
   return (
@@ -13,6 +12,9 @@ const classes = useStyles();
       <Paper className={classes.paper2}>
         <Typography className={classes.typo2}>Who We Are</Typography>
       </Paper>
+      <Card className={classes.card1}>
+        <CardMedia image="../assets/image/plant.jpg" title="plant"/>
+      </Card>
     </div>
   )
 };
@@ -49,6 +51,10 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 'bold',
     fontFamily: 'Roboto',
     color: COLORS.BLACK,
+  },
+
+  card1: {
+    maxWidth: 345,
   },
 }));
 
