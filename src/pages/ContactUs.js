@@ -21,9 +21,11 @@ const ContactUs = () => {
         <Typography className={classes.title}> CONTACT US </Typography>
         </Collapse>
         </div>
+
         <div className="wrapper">
           <h1 className="typography-title">Let's Start a Conversation</h1>
         </div>
+        
         <div className="wrapper-column">
           <h1>Ask how we can help you:</h1>
           <p>See our platform in action</p>
