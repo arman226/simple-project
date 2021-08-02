@@ -65,7 +65,7 @@ const Home = () => {
 
 <Divider/>
     <div className="homepage-pics">
-  <Container justifyContent="flex-start" maxWidth="xs">
+  <Container justifyContent="flex-start" maxWidth="xs" className={classes.root}>
     <Paper elevation={0}>
       <h1>REDUCE</h1>
       <h1>REUSE</h1>
@@ -82,7 +82,7 @@ const Home = () => {
   </Container>
   <Divider/>
   <footer>
-    <h1>yamh</h1>
+    <h1>Footer?</h1>
   </footer>
   </div>
   );
