@@ -36,30 +36,3 @@
     transform: rotate(360deg);
   }
 }
-<<<<<<< HEAD
-.homepage-background{
-  background-image: url('./assets/image/background.jpg');
-  background-size: cover;
-  height:600px;
-  margin-bottom: 40px;
-}
-.headerfonts{
-  font-family: 'Brush Script MT', cursive;
-  font-weight: 900;
-}
-.design{
-  padding-top: 40px;
-
-}
-.homepage-pics{
-  background-image: url('./assets/image/eco-friendly.jpg');
-  background-size: cover;
-  height:400px;
-  margin-bottom: 10px;
-}
-.cards{
-  margin-bottom: 20px;
-  margin-left: 30px;
-}
-=======
->>>>>>> 598a4f9c2a37abeaa2a45db53cb98d0aaad22b47

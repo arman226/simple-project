@@ -1,5 +1,5 @@
 .homepage-background{
-    background-image: url('../assets/background.jpg');
+    background-image: url('../assets/image/background.jpg');
     background-size: cover;
     height:600px;
     margin-bottom: 40px;
@@ -13,7 +13,7 @@
   
   }
   .homepage-pics{
-    background-image: url('../assets/eco-friendly.jpg');
+    background-image: url('../assets/image/eco-friendly.jpg');
     background-size: cover;
     height:400px;
     margin-bottom: 10px;

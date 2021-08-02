@@ -3,6 +3,7 @@ import './Home.css'
 import {makeStyles,Container,Paper, Typography,Button,Grid, Box,Divider,
 Card,CardActionArea,CardContent,CardMedia,CardActions} from '@material-ui/core'
 import backgrounds from '../assets/image/eco-friendly.jpg'
+import plants from '../assets/image/Plants.png'
 import {COLORS} from '../styles/color.styles'
 const Home = () => {
   const classes = useStyles()
@@ -44,8 +45,8 @@ const Home = () => {
         <CardMedia
           component="img"
           alt="Plants"
-          height="140"
-          image="/assets/Plants.png"
+          size="100%"
+          image={plants}
           title="Plants"
         />
         <CardContent>
