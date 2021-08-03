@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
-import { makeStyles, Typography, Collapse, Grid, TextField, Button} from "@material-ui/core";
+import { makeStyles, Typography, Collapse, Grid, TextField, Button, createTheme, ThemeProvider} from "@material-ui/core";
+import { lightGreen } from '@material-ui/core/colors';
 import { COLORS } from "../styles/color.styles";
 import './ContactUs.css';
 import universe from "../assets/video/video-1.mp4";
@@ -40,17 +41,9 @@ const [values,setValues] = useState(initialValues);
         <Typography className={classes.title}> CONTACT US </Typography>
         </Collapse>
         </div>
-
         <div className="wrapper">
           <h1 className="typography-title">Let's Start a Conversation</h1>
         </div>
-<<<<<<< HEAD
-        
-        <div className="wrapper-column">
-          <h1>Ask how we can help you:</h1>
-          <p>See our platform in action</p>
-        </div>
-=======
         <form className={classes.root}>
           <Grid  container justifyContent="center" alignItems="flex-start">
             <Grid item xs={12} sm={6} container  direction="column" justifyContent="flex-start" alignItems="center">
@@ -95,7 +88,8 @@ const [values,setValues] = useState(initialValues);
                   onChange = {handleInputChange}
                   />
                   <br/>
-                <Button
+                <ThemeProvider theme={theme}>
+                  <Button
                   variant="contained"
                   color="primary"
                   size="large"
@@ -103,13 +97,22 @@ const [values,setValues] = useState(initialValues);
                 >
                   Submit
                 </Button>
+                </ThemeProvider>
+                
               </Grid>
           </Grid>
           </form>
->>>>>>> 384356a5691e345be8764123a235d5605822a4d6
       </div>
+
   ) 
 };
+
+
+const theme = createTheme({
+  palette: {
+    primary: lightGreen,
+  },
+});
 
 const useStyles = makeStyles((theme) => ({
   title: {
