@@ -12,7 +12,7 @@ export const COLORS = {
   VIOLET1: "#9c5fd9",
   GREEN: "#00FF00",
   GREEN1: "#89e344",
-  GREEN2: "#72cc31",
+  GREEN2: "#259927",
   GREEN3: "#4be350",
   GREEN4: "#81f381",
   BROWN: "#A47C4C",
