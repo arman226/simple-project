@@ -3,7 +3,7 @@ import { makeStyles, Typography, Collapse, Grid, TextField, Button} from "@mater
 import { COLORS } from "../styles/color.styles";
 import './ContactUs.css';
 import universe from "../assets/video/video-1.mp4";
-
+import Footer from "../components/footer";
 
 const ContactUs = () => {
   const classes = useStyles();
@@ -97,6 +97,7 @@ const [values,setValues] = useState(initialValues);
                 </Button>
               </Grid>
           </Grid>
+          <Footer/>
           </form>
       </div>
 
@@ -120,6 +121,7 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     marginLeft: 45,
+    marginBottom: 50,
     width: '60%',
     
   },
