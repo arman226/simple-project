@@ -48,14 +48,14 @@ const [values,setValues] = useState(initialValues);
             <Grid item xs={12} sm={6} container  direction="column" justifyContent="flex-start" alignItems="center">
               <h4>Points of Contact:</h4>
               <p className="p-1"> U.S. | John Doe Headquarters</p>
-              <p className="p-2">2200 Western Ave, Suite 302, Seattle, WA 98121</p>
+              <Typography  className={classes.pTag} variant="h6" color="textSecondary" component="p"> 2200 Western Ave, Suite 302, Seattle, WA 98121 </Typography>
               <p className="p-1">Information and Sales</p>
-              <p className="p-2">JohnDoe@marketing.com</p>
+              <Typography  className={classes.pTag} variant="h6" color="textSecondary" component="p"> JohnDoe@marketing.com </Typography>
               <p className="p-1">Support</p>
-              <p className="p-2">JohnDoe@Support.com</p>
+              <Typography  className={classes.pTag} variant="h6" color="textSecondary" component="p"> JohnDoe@Support.com </Typography>
               <h4>Additional Office Locations</h4>
               <p className="p-1">Germany</p>
-              <p className="p-2">Torstr. 231, Vorderhaus, 1. OG, 10115 Berlin</p>
+              <Typography  className={classes.pTag} variant="h6" color="textSecondary" component="p"> Torstr. 231, Vorderhaus, 1. OG, 10115 Berlin </Typography>
               </Grid>
               <Grid item xs={12} sm={6}>
                 <TextField
@@ -122,6 +122,10 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 45,
     width: '60%',
     
+  },
+  pTag: {
+    marginBottom: 70,
+    marginTop: -25,
   }
 }));
 
