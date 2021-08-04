@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from "react";
-import { makeStyles, Typography, Collapse, Grid, TextField, Button, createTheme, ThemeProvider} from "@material-ui/core";
-import { lightGreen } from '@material-ui/core/colors';
+import { makeStyles, Typography, Collapse, Grid, TextField, Button} from "@material-ui/core";
 import { COLORS } from "../styles/color.styles";
 import './ContactUs.css';
 import universe from "../assets/video/video-1.mp4";
-
+import Footer from "../components/footer";
 
 const ContactUs = () => {
   const classes = useStyles();
@@ -49,14 +48,14 @@ const [values,setValues] = useState(initialValues);
             <Grid item xs={12} sm={6} container  direction="column" justifyContent="flex-start" alignItems="center">
               <h4>Points of Contact:</h4>
               <p className="p-1"> U.S. | John Doe Headquarters</p>
-              <p className="p-2">2200 Western Ave, Suite 302, Seattle, WA 98121</p>
+              <Typography  className={classes.pTag} variant="h6" color="textSecondary" component="p"> 2200 Western Ave, Suite 302, Seattle, WA 98121 </Typography>
               <p className="p-1">Information and Sales</p>
-              <p className="p-2">JohnDoe@marketing.com</p>
+              <Typography  className={classes.pTag} variant="h6" color="textSecondary" component="p"> JohnDoe@marketing.com </Typography>
               <p className="p-1">Support</p>
-              <p className="p-2">JohnDoe@Support.com</p>
+              <Typography  className={classes.pTag} variant="h6" color="textSecondary" component="p"> JohnDoe@Support.com </Typography>
               <h4>Additional Office Locations</h4>
               <p className="p-1">Germany</p>
-              <p className="p-2">Torstr. 231, Vorderhaus, 1. OG, 10115 Berlin</p>
+              <Typography  className={classes.pTag} variant="h6" color="textSecondary" component="p"> Torstr. 231, Vorderhaus, 1. OG, 10115 Berlin </Typography>
               </Grid>
               <Grid item xs={12} sm={6}>
                 <TextField
@@ -88,8 +87,7 @@ const [values,setValues] = useState(initialValues);
                   onChange = {handleInputChange}
                   />
                   <br/>
-                <ThemeProvider theme={theme}>
-                  <Button
+                <Button
                   variant="contained"
                   color="primary"
                   size="large"
@@ -97,22 +95,14 @@ const [values,setValues] = useState(initialValues);
                 >
                   Submit
                 </Button>
-                </ThemeProvider>
-                
               </Grid>
           </Grid>
+         
           </form>
       </div>
 
   ) 
 };
-
-
-const theme = createTheme({
-  palette: {
-    primary: lightGreen,
-  },
-});
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -131,8 +121,13 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     marginLeft: 45,
+    marginBottom: 50,
     width: '60%',
     
+  },
+  pTag: {
+    marginBottom: 70,
+    marginTop: -25,
   }
 }));
 
