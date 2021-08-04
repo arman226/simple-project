@@ -11,52 +11,57 @@ const classes = useStyles();
   return (
     <div>
       <div className="cover">
-        <Container component="main" maxWidth="md">
-          <Grid 
-            container
-            direction="column"
-            justifyContent="center"
-            alignItems="center"
-            spacing={0}
-          >
-            <Typography className={classes.typo1}>WE LOVE NATURE</Typography>
-          </Grid>
-        </Container>
+        <div className={classes.root1}>
+          <div className="content">
+            <Grid 
+              container
+              direction="column"
+              justifyContent="flex-end"
+              alignItems="flex-end"
+            > 
+              <Grid item>
+                <Container component="main" maxWidth="xl">
+                  <Typography className={classes.typo1}>WE LOVE NATURE</Typography>
+                </Container>
+              </Grid>
+            </Grid>
+          </div>
+        </div>
       </div>
 
       <div className="who">
-        <Container maxWidth="md" disableGutters	>
+        <Container className={classes.who} component="main" maxWidth="md" disableGutters>
           <Grid 
             container
             direction="column"
             justifyContent="center"
             alignItems="center"
-            spacing={0}
           >
             <Grid item>
               <Typography className={classes.typo2}>Who We Are</Typography>
             </Grid>
-            <Grid item>  
-              <Typography className={classes.typo3} component="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie at elementum eu facilisis sed odio morbi quis commodo. Mauris a diam maecenas sed enim. 
-                Ultrices vitae auctor eu augue ut lectus arcu bibendum. Quisque id diam vel quam elementum pulvinar etiam. Magna fermentum iaculis eu non diam phasellus vestibulum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. 
-                Sit amet facilisis magna etiam tempor orci. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Dolor purus non enim praesent elementum facilisis leo. Leo urna molestie 
-                at elementum eu facilisis sed. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Mi tempus imperdiet nulla malesuada pellentesque. Eget nunc scelerisque viverra mauris in 
-                aliquam sem fringilla ut. A diam sollicitudin tempor id eu nisl nunc mi. Quam quisque id diam vel quam elementum pulvinar etiam. Amet purus gravida quis blandit turpis. Tincidunt eget nullam non nisi.
-              </Typography>
+            <Grid item>
+              <div className="text">
+                <Typography className={classes.typo3} component="p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie at elementum eu facilisis sed odio morbi quis commodo. Mauris a diam maecenas sed enim. 
+                  Ultrices vitae auctor eu augue ut lectus arcu bibendum. Quisque id diam vel quam elementum pulvinar etiam. Magna fermentum iaculis eu non diam phasellus vestibulum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. 
+                  Sit amet facilisis magna etiam tempor orci. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Dolor purus non enim praesent elementum facilisis leo. Leo urna molestie 
+                  at elementum eu facilisis sed. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Mi tempus imperdiet nulla malesuada pellentesque. Eget nunc scelerisque viverra mauris in 
+                  aliquam sem fringilla ut. A diam sollicitudin tempor id eu nisl nunc mi. Quam quisque id diam vel quam elementum pulvinar etiam. Amet purus gravida quis blandit turpis. Tincidunt eget nullam non nisi.
+                </Typography>
+              </div>  
             </Grid>
           </Grid>
         </Container>
       </div>
       
       <div className="what">
-        <Container maxWidth="xl" className={classes.what}>
+        <Container component="main" maxWidth="xl" className={classes.what} disableGutters>
           <Grid 
             container
             direction="column"
             justifyContent="center"
             alignItems="center"
-            spacing={5}
           >
             <Typography className={classes.typo5}>What we want</Typography>
             <Container maxWidth="lg">
@@ -125,8 +130,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 'bold',
     fontFamily: 'Pathway Gothic One',
     color: COLORS.WHITE,
-    opacity: 0.99,
-    borderBlock: 'solid'
+    paddingRight: '80px'
   },
 
   typo2: {
@@ -169,9 +173,18 @@ const useStyles = makeStyles((theme) => ({
     height: 200,
   },
 
+  who: {
+    width: "auto",
+  },
+
   what: {
     paddingBottom: "60px",
     backgroundColor: COLORS.GREEN3,
+  },
+
+  root1: {
+    maxWidth: "auto",
+    paddingLeft: theme.spacing(8),
   },
 }));
 

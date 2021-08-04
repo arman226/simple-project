@@ -2,18 +2,33 @@
     background-image: url('../assets/image/plant.jpg');
     background-size: cover;
     height: 660px;
+    width: auto;
     margin-bottom: 30px;
     padding-top: 290px;
-    padding-left: 630px;
 }
 
 .who {
     height: auto;
+    width: auto;
     margin-bottom: 60px;
 }
 
 .what {
     height: auto;
-    background-color: "#66f263";
+    width: auto;
     margin-bottom: 0px;
+}
+
+.text {
+    height: auto;
+    width: auto;
+}
+
+.bigtext {
+    height: auto;
+    width: auto;
+}
+
+.content {
+    height: 320px;
 }

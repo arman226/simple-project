@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from "react";
 import { makeStyles, Typography, Collapse, Grid, TextField, Button, createTheme, ThemeProvider} from "@material-ui/core";
-import { lightGreen } from '@material-ui/core/colors';
 import { COLORS } from "../styles/color.styles";
 import './ContactUs.css';
 import universe from "../assets/video/video-1.mp4";
-import Footer from "../components/footer";
 
 const ContactUs = () => {
   const classes = useStyles();
@@ -98,7 +96,6 @@ const [values,setValues] = useState(initialValues);
                   Submit
                 </Button>
                 </ThemeProvider>
-                
               </Grid>
           </Grid>
           </form>
