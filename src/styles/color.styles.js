@@ -18,6 +18,7 @@ export const COLORS = {
   GREEN5: "#72cc31",
   GREEN6: "#9bdb6e",
   GREEN7: "#c5e0b4",
+  GREEN8: "#83B582",
   BROWN: "#5B5622",
   YELLOW: "#E8FA72",
 };
