@@ -1,6 +1,7 @@
 import React from "react";
 import './Home.css'
 import '../App.css'
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import {makeStyles,Container,Paper, Typography,Button,Grid, Box,Divider,
 Card,CardActionArea,CardContent,CardMedia,CardActions} from '@material-ui/core'
 import backgrounds from '../assets/image/eco-friendly.jpg'
@@ -8,6 +9,7 @@ import plants from '../assets/image/plant.jpg'
 import mountains from '../assets/image/mountains.jpg'
 import ocean from '../assets/image/ocean.jpg'
 import {COLORS} from '../styles/color.styles'
+
 const Home = () => {
   const classes = useStyles()
   return (
@@ -35,7 +37,7 @@ const Home = () => {
        Mother Earth needs help.</Typography>
       </Grid>
       <div className={classes.backbutton}>
-      <Button variant="contained" className={classes.buttons}>GET STARTED</Button>
+      <Button variant="contained" className={classes.buttons}>GET STARTED <ArrowForwardIcon/></Button>
       </div>
       </Grid>
         
@@ -52,7 +54,7 @@ const Home = () => {
 >
   <Grid item>
   <Card className={classes.root}>
-      <CardActionArea>
+      
         <CardMedia
           component="img"
           alt="Plants"
@@ -72,7 +74,7 @@ const Home = () => {
          
           </Typography>
         </CardContent>
-      </CardActionArea>
+    
       
     </Card>
     </Grid>
@@ -102,7 +104,7 @@ const Home = () => {
     </Grid>
     <Grid item >
     <Card className={classes.root}>
-      <CardActionArea>
+     
         <CardMedia
           component="img"
           alt="Ocean"
@@ -121,7 +123,7 @@ const Home = () => {
 
           </Typography>
         </CardContent>
-      </CardActionArea>
+      
       
     </Card>
     </Grid>
@@ -146,14 +148,12 @@ const Home = () => {
   </div>
   <Container component="main" maxWidth="md">
     <Paper elevation={0}>
-      <h1 className={classes.bodyend}>If waste cannot be reduced or reused, then recycling is a great way to turn rubbish into something useful again. Recycling helps to ensure that materials such as paper, card, glass and metal can be turned into new products, reducing the need for virgin materials and preserving the planet's resources.
-</h1>
+      <Typography component="h1" className={classes.bodyend}>If waste cannot be reduced or reused, then recycling is a great way to turn rubbish into something useful again. Recycling helps to ensure that materials such as paper, card, glass and metal can be turned into new products, reducing the need for virgin materials and preserving the planet's resources.
+</Typography>
     </Paper>
   </Container>
   <Divider/>
-  <footer>
-    <h1>Footer?</h1>
-  </footer>
+    
   </div>
   );
 };
@@ -196,13 +196,15 @@ roots:{
  buttons:{
    fontSize:30,
    fontFamily:"Aharoni",
-   maxWidth:"md"
+   maxWidth:"md",
+   backgroundColor: COLORS.BROWN,
+   color: COLORS.GREEN2
  },
  r3:{
   fontSize:50,
    fontFamily:"Times New Roman",
    fontWeight:"bolder",
-   color: COLORS.BLACK
+   color: COLORS.GREEN3
  },
  backbutton:{
   marginTop: theme.spacing(4),
@@ -210,7 +212,7 @@ roots:{
  bodyend:{
   fontSize:20,
   fontFamily: "Pathway Gothic One",
-  
+  marginBottom:theme.spacing(9)
  }
 }));
 
