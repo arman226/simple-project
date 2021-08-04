@@ -46,11 +46,11 @@ const Home = () => {
   <Grid
   container
   direction="row"
-  justifyContent="center"
+  justifyContent="space-evenly"
   alignItems="center"
-
+  
 >
-  <Grid item xs={3}>
+  <Grid item>
   <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -76,7 +76,7 @@ const Home = () => {
       
     </Card>
     </Grid>
-    <Grid item xs={3}>
+    <Grid item >
     <Card className={classes.root}>
      
         <CardMedia
@@ -100,7 +100,7 @@ const Home = () => {
      
     </Card>
     </Grid>
-    <Grid item xs={3}>
+    <Grid item >
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
