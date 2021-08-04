@@ -14,9 +14,10 @@ const Home = () => {
   const classes = useStyles()
   return (
     <div className="App">
+  
    <div className="homepage-background">
      <div className="design1">
-    <Container component="main" maxWidth="md" className={classes.paper}>
+    <Container component="main" maxWidth="lg" className={classes.paper}>
       
         <Grid   container
             direction="column"
@@ -32,9 +33,8 @@ const Home = () => {
         
       </Grid>
       <Grid item>
-      <Typography className={classes.headsecond}>Enjoy our nature while protecting it.</Typography>
-      <Typography className={classes.headsecond}>
-       Mother Earth needs help.</Typography>
+      <Typography className={classes.headsecond}>Enjoy our nature while protecting it. <br/>Mother Earth needs help.</Typography>
+     
       </Grid>
       <div className={classes.backbutton}>
       <Button variant="contained" className={classes.buttons}>GET STARTED <ArrowForwardIcon/></Button>
@@ -44,6 +44,8 @@ const Home = () => {
     </Container>
     </div>
   </div>
+  
+ 
   <div className="cards">
   <Grid
   container
@@ -128,14 +130,15 @@ const Home = () => {
     </Card>
     </Grid>
     </Grid>
+  
     </div>
-   
+    
     
 
 <Divider/>
     <div className="homepage-pics">
  <div className={classes.roots}>
-<div className="design2">
+<div className="design1">
     <Container maxWidth="md" >
       
      <Typography className={classes.r3}>REDUCE</Typography>
@@ -165,22 +168,22 @@ const useStyles = makeStyles((theme) => ({
  root:{   maxWidth: 345
 },
 roots:{
+  maxWidth: 700,
   marginTop: theme.spacing(6),
   padding: theme.spacing(5),
-  backgroundColor: 'rgba(0, 0, 0, 0.5)'
+  marginBottom:theme.spacing(9),
+
 },
 
  paper:{
     marginTop: theme.spacing(6),
     padding: theme.spacing(9)
  },
- button:{
-   color: COLORS.BROWN
- },
+ 
  head:{
   flexGrow: 1,
-  fontSize:70,
-  fontFamily: "Brush Script MT",
+  fontSize:66,
+  fontFamily: "Elephant",
   color: COLORS.YELLOW,
   fontWeight: 'bolder'
  },
@@ -189,7 +192,8 @@ roots:{
   fontSize:26,
   fontFamily: "Garamond",
   color: COLORS.WHITE,
-  fontWeight: 'bolder'
+  fontWeight: 'bolder',
+  marginTop: theme.spacing(5)
   
  },
  buttons:{

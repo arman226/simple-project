@@ -24,4 +24,5 @@ export const COLORS = {
   YELLOW: "#E8FA72",
   YELLOW1: "#ECD662",
   VELVET: "#AE7C7C",
+  YELLOW2: "#f4ff9b"
 };
