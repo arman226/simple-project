@@ -4,7 +4,7 @@ import { lightGreen } from '@material-ui/core/colors';
 import { COLORS } from "../styles/color.styles";
 import './ContactUs.css';
 import universe from "../assets/video/video-1.mp4";
-
+import Footer from "../components/footer";
 
 const ContactUs = () => {
   const classes = useStyles();
@@ -133,6 +133,7 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     marginLeft: 45,
+    marginBottom: 50,
     width: '60%',
     
   },

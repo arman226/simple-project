@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className="App">
    <div className="homepage-background">
-     <div className="design">
+     <div className="design1">
     <Container component="main" maxWidth="md" className={classes.paper}>
       
         <Grid   container
@@ -135,7 +135,7 @@ const Home = () => {
 <Divider/>
     <div className="homepage-pics">
  <div className={classes.roots}>
-<div className="design">
+<div className="design2">
     <Container maxWidth="md" >
       
      <Typography className={classes.r3}>REDUCE</Typography>
@@ -165,10 +165,9 @@ const useStyles = makeStyles((theme) => ({
  root:{   maxWidth: 345
 },
 roots:{
-  maxWidth: 600,
   marginTop: theme.spacing(6),
- 
-  padding: theme.spacing(5)
+  padding: theme.spacing(5),
+  backgroundColor: 'rgba(0, 0, 0, 0.5)'
 },
 
  paper:{
@@ -197,14 +196,14 @@ roots:{
    fontSize:30,
    fontFamily:"Aharoni",
    maxWidth:"md",
-   backgroundColor: COLORS.BROWN,
-   color: COLORS.GREEN2
+   backgroundColor: COLORS.GREEN8,
+   color: COLORS.WHITE
  },
  r3:{
   fontSize:50,
    fontFamily:"Times New Roman",
    fontWeight:"bolder",
-   color: COLORS.GREEN3
+   color: COLORS.YELLOW1
  },
  backbutton:{
   marginTop: theme.spacing(4),
