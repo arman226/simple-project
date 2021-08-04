@@ -1,13 +1,17 @@
 import React from "react";
 import './Home.css'
+import '../App.css'
 import {makeStyles,Container,Paper, Typography,Button,Grid, Box,Divider,
 Card,CardActionArea,CardContent,CardMedia,CardActions} from '@material-ui/core'
 import backgrounds from '../assets/image/eco-friendly.jpg'
+import plants from '../assets/image/plant.jpg'
+import mountains from '../assets/image/mountains.jpg'
+import ocean from '../assets/image/ocean.jpg'
 import {COLORS} from '../styles/color.styles'
 const Home = () => {
   const classes = useStyles()
   return (
-    <div className="">
+    <div className="App">
    <div className="homepage-background">
      <div className="design">
     <Container component="main" maxWidth="md" className={classes.paper}>
@@ -39,13 +43,22 @@ const Home = () => {
     </div>
   </div>
   <div className="cards">
+  <Grid
+  container
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
+  spacing={3}
+>
+  <Grid item>
   <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           component="img"
           alt="Plants"
-          height="140"
-          image="/assets/Plants.png"
+          height="200"
+          
+          image={plants}  
           title="Plants"
         />
         <CardContent>
@@ -53,26 +66,85 @@ const Home = () => {
             Plants
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-          Plants are really important for the planet and for all living things. Plants help to clean water too.
+          Plants are really important for the planet and for all living things.
+           Plants absorb carbon dioxide and release oxygen from their leaves, which humans and other animals need to breathe.
+          Living things need plants to live - they eat them and live in them.
+          Plants help to clean water too.
+         
           </Typography>
         </CardContent>
       </CardActionArea>
       
     </Card>
+    </Grid>
+    <Grid item>
+    <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          alt="Plants"
+          height="200"
+          width="10"
+          image={mountains}  
+          title="Plants"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Mountains
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+          Mountains cover 22 percent of the planet's land surface and provide habitat for plants, animals and human 
+          The vital landforms also supply critical resources such as fresh water, food and even renewable energy.
+          It helps in prevent with speed of wind.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      
+    </Card>
+    </Grid>
+    <Grid item>
+    <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          alt="Plants"
+          height="200"
+          width="10"
+          image={ocean}  
+          title="Plants"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Ocean
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+          The ocean produces over half of the world's oxygen and absorbs 50 times more carbon dioxide than our atmosphere. 
+         Covering 70 percent of the Earth's surface, the ocean transports heat from the equator to the poles, regulating our climate and weather patterns.
+
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      
+    </Card>
+    </Grid>
+    </Grid>
     </div>
    
     
 
 <Divider/>
     <div className="homepage-pics">
-  <Container justifyContent="flex-start" maxWidth="xs" className={classes.root}>
-    <Paper elevation={0}>
-      <h1>REDUCE</h1>
-      <h1>REUSE</h1>
-      <h1>RECYCLE</h1>
-    </Paper>
-  </Container>
-  
+ <div className={classes.roots}>
+<div className="design">
+    <Container maxWidth="md" >
+      
+     <Typography className={classes.r3}>REDUCE</Typography>
+     <Typography className={classes.r3}>REUSE</Typography>
+     <Typography className={classes.r3}>RECYCLE</Typography>
+     
+    </Container>
+    </div>
+  </div>
   </div>
   <Container component="main" maxWidth="md">
     <Paper elevation={0}>
@@ -94,6 +166,13 @@ const useStyles = makeStyles((theme) => ({
  },
  root:{   maxWidth: 345
 },
+roots:{
+  maxWidth: 600,
+  marginTop: theme.spacing(6),
+ 
+  padding: theme.spacing(5)
+},
+
  paper:{
     marginTop: theme.spacing(6),
     padding: theme.spacing(9)
@@ -120,6 +199,12 @@ const useStyles = makeStyles((theme) => ({
    fontSize:30,
    fontFamily:"Aharoni",
    maxWidth:"md"
+ },
+ r3:{
+  fontSize:50,
+   fontFamily:"Times New Roman",
+   fontWeight:"bolder",
+   color: COLORS.BLACK
  },
  backbutton:{
   marginTop: theme.spacing(4),

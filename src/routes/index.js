@@ -11,12 +11,12 @@ const RootRoute = () => {
   return (
     <Router>
       <NavMenu />
-      <div style={{ marginTop: 100 }}>
+     
         <Route exact path='/' component={Home} />
         <Route exact path='/Home' component={Home} />
         <Route exact path='/About' component={AboutUs} />
         <Route exact path='/Contact' component={ContactUs} />
-      </div>
+    
     </Router>
   );
 };
