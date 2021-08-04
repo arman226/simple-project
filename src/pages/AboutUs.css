@@ -1,10 +1,10 @@
 .cover {
     background-image: url('../assets/image/plant.jpg');
     background-size: cover;
-    height: 600px;
+    height: 660px;
     margin-bottom: 30px;
-    padding-top: 200px;
-    padding-left: 600px;
+    padding-top: 290px;
+    padding-left: 630px;
 }
 
 .who {

@@ -110,7 +110,9 @@ const [values,setValues] = useState(initialValues);
 
 const theme = createTheme({
   palette: {
-    primary: lightGreen,
+    primary: {
+      main: '#83B582',
+    },
   },
 });
 
