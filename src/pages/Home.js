@@ -48,9 +48,9 @@ const Home = () => {
   direction="row"
   justifyContent="center"
   alignItems="center"
-  spacing={3}
+
 >
-  <Grid item>
+  <Grid item xs={3}>
   <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -77,16 +77,16 @@ const Home = () => {
       
     </Card>
     </Grid>
-    <Grid item>
+    <Grid item xs={3}>
     <Card className={classes.root}>
-      <CardActionArea>
+     
         <CardMedia
           component="img"
-          alt="Plants"
+          alt="Mountains"
           height="200"
           width="10"
           image={mountains}  
-          title="Plants"
+          title="Mountains"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -98,20 +98,19 @@ const Home = () => {
           It helps in prevent with speed of wind.
           </Typography>
         </CardContent>
-      </CardActionArea>
-      
+     
     </Card>
     </Grid>
-    <Grid item>
+    <Grid item xs={3}>
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Plants"
+          alt="Ocean"
           height="200"
           width="10"
           image={ocean}  
-          title="Plants"
+          title="Ocean"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
