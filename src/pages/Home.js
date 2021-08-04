@@ -57,7 +57,6 @@ const Home = () => {
           component="img"
           alt="Plants"
           height="200"
-          
           image={plants}  
           title="Plants"
         />

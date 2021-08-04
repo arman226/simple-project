@@ -79,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     fontWeight: "bold",
-    fontSize: 25,
+    fontSize: 30,
     color: COLORS.WHITE,
     fontFamily: "Pathway Gothic One",
   },

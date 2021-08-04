@@ -2,7 +2,7 @@ video {
     object-fit: cover;
     width: 100%;
     height: 50%;
-    position: fixed;
+    position: absolute;
     z-index: -1;
 }
 
@@ -29,7 +29,27 @@ video {
 }
 
 .wrapper-column {
-    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper-column .max {
+    max-width: 1200px;
+}
+
+.wrapper-column .width {
+    width: 88%;
+}
+
+.x-column {
+    position: relative;
+    z-index: 1;
+    float: left;
+    margin-right: 4%;
+}
+
+.x-column .x-1-2 {
+    width: 48%;
 }
 
 .typography-title {
@@ -37,4 +57,25 @@ video {
     font-size: 40px;
     font-weight: bold;
     font-family: "Pathway Gothic One";
+}
+
+h4 {
+    font-size: 2.5em;
+    line-height: 55px;
+    color: #101820;
+    font-weight: 800;
+    margin-bottom: 1.25em;
+}
+
+.p-1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.p-2 {
+    margin-top: -25px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: 100;
+    color: #9c9c9c;
 }
