@@ -1,7 +1,7 @@
 .homepage-background{
-    background-image: url('../assets/image/background.jpg');
+    background-image: url('../assets/image/background2.jpg');
     background-size: cover;
-    height:600px;
+    height:auto;
     margin-bottom: 40px;
   }
   .headerfonts{

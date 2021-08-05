@@ -44,6 +44,7 @@ const Home = () => {
     </Container>
     </div>
   </div>
+ 
   <div className="cards">
   <Grid
   container
@@ -128,8 +129,9 @@ const Home = () => {
     </Card>
     </Grid>
     </Grid>
+  
     </div>
-   
+    
     
 
 <Divider/>
@@ -175,13 +177,11 @@ roots:{
     marginTop: theme.spacing(6),
     padding: theme.spacing(9)
  },
- button:{
-   color: COLORS.BROWN
- },
+ 
  head:{
   flexGrow: 1,
   fontSize:70,
-  fontFamily: "Brush Script MT",
+  fontFamily: "Elephant",
   color: COLORS.YELLOW,
   fontWeight: 'bolder'
  },
@@ -197,6 +197,7 @@ roots:{
    fontSize:30,
    fontFamily:"Aharoni",
    maxWidth:"md",
+   marginTop: theme.spacing(2),
    backgroundColor: COLORS.BROWN,
    color: COLORS.GREEN2
  },
