@@ -1,0 +1,19 @@
+.cover {
+    background-image: url('../assets/image/plant.jpg');
+    background-size: cover;
+    height: 660px;
+    margin-bottom: 30px;
+    padding-top: 290px;
+    padding-left: 630px;
+}
+
+.who {
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.what {
+    height: auto;
+    background-color: "#66f263";
+    margin-bottom: 0px;
+}

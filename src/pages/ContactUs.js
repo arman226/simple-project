@@ -97,13 +97,28 @@ const [values,setValues] = useState(initialValues);
                 </Button>
               </Grid>
           </Grid>
+<<<<<<< HEAD
          
+=======
+>>>>>>> 2eff07e21711064954b44e614124d25f4a485158
           </form>
       </div>
 
   ) 
 };
 
+<<<<<<< HEAD
+=======
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: COLORS.GREEN8,
+    },
+  },
+});
+
+>>>>>>> 2eff07e21711064954b44e614124d25f4a485158
 const useStyles = makeStyles((theme) => ({
   title: {
     marginTop: 150,
