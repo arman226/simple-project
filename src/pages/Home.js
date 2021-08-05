@@ -14,9 +14,10 @@ const Home = () => {
   const classes = useStyles()
   return (
     <div className="App">
+  
    <div className="homepage-background">
      <div className="design1">
-    <Container component="main" maxWidth="md" className={classes.paper}>
+    <Container component="main" maxWidth="lg" className={classes.paper}>
       
         <Grid   container
             direction="column"
@@ -32,9 +33,8 @@ const Home = () => {
         
       </Grid>
       <Grid item>
-      <Typography className={classes.headsecond}>Enjoy our nature while protecting it.</Typography>
-      <Typography className={classes.headsecond}>
-       Mother Earth needs help.</Typography>
+      <Typography className={classes.headsecond}>Enjoy our nature while protecting it. <br/>Mother Earth needs help.</Typography>
+     
       </Grid>
       <div className={classes.backbutton}>
       <Button variant="contained" className={classes.buttons}>GET STARTED <ArrowForwardIcon/></Button>
@@ -44,6 +44,7 @@ const Home = () => {
     </Container>
     </div>
   </div>
+  
  
   <div className="cards">
   <Grid
@@ -179,7 +180,7 @@ roots:{
  
  head:{
   flexGrow: 1,
-  fontSize:70,
+  fontSize:66,
   fontFamily: "Elephant",
   color: COLORS.YELLOW,
   fontWeight: 'bolder'
@@ -189,21 +190,16 @@ roots:{
   fontSize:26,
   fontFamily: "Garamond",
   color: COLORS.WHITE,
-  fontWeight: 'bolder'
+  fontWeight: 'bolder',
+  marginTop: theme.spacing(8)
   
  },
  buttons:{
    fontSize:30,
    fontFamily:"Aharoni",
    maxWidth:"md",
-<<<<<<< HEAD
-   marginTop: theme.spacing(2),
-   backgroundColor: COLORS.BROWN,
-   color: COLORS.GREEN2
-=======
    backgroundColor: COLORS.GREEN8,
    color: COLORS.WHITE
->>>>>>> 2eff07e21711064954b44e614124d25f4a485158
  },
  r3:{
   fontSize:50,

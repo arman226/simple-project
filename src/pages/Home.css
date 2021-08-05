@@ -1,18 +1,13 @@
 .homepage-background{
     background-image: url('../assets/image/background2.jpg');
     background-size: cover;
-    height:auto;
+    height: auto;
     margin-bottom: 40px;
-  }
-  .headerfonts{
-    font-family: 'Brush Script MT', cursive;
-    font-weight: 900;
   }
 
   .design1{
-    padding-top: 40px;
-    height: 320px;
-    width: 100%;
+    padding-top: 30px;
+    
   }
 
   .design2{

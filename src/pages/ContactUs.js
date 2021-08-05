@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import { makeStyles, Typography, Collapse, Grid, TextField, Button} from "@material-ui/core";
+import { makeStyles, Typography, Collapse, Grid, TextField, Button, createTheme, ThemeProvider} from "@material-ui/core";
 import { COLORS } from "../styles/color.styles";
 import './ContactUs.css';
 import universe from "../assets/video/video-1.mp4";
@@ -87,7 +87,8 @@ const [values,setValues] = useState(initialValues);
                   onChange = {handleInputChange}
                   />
                   <br/>
-                <Button
+                  <ThemeProvider theme={theme}>
+                  <Button
                   variant="contained"
                   color="primary"
                   size="large"
@@ -95,20 +96,15 @@ const [values,setValues] = useState(initialValues);
                 >
                   Submit
                 </Button>
+                </ThemeProvider>
               </Grid>
           </Grid>
-<<<<<<< HEAD
-         
-=======
->>>>>>> 2eff07e21711064954b44e614124d25f4a485158
           </form>
       </div>
 
   ) 
 };
 
-<<<<<<< HEAD
-=======
 
 const theme = createTheme({
   palette: {
@@ -118,7 +114,6 @@ const theme = createTheme({
   },
 });
 
->>>>>>> 2eff07e21711064954b44e614124d25f4a485158
 const useStyles = makeStyles((theme) => ({
   title: {
     marginTop: 150,
