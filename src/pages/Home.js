@@ -138,7 +138,7 @@ const Home = () => {
 <Divider/>
     <div className="homepage-pics">
  <div className={classes.roots}>
-<div className="design2">
+<div className="design1">
     <Container maxWidth="md" >
       
      <Typography className={classes.r3}>REDUCE</Typography>
@@ -168,9 +168,11 @@ const useStyles = makeStyles((theme) => ({
  root:{   maxWidth: 345
 },
 roots:{
+  maxWidth: 700,
   marginTop: theme.spacing(6),
   padding: theme.spacing(5),
-  backgroundColor: 'rgba(0, 0, 0, 0.5)'
+  marginBottom:theme.spacing(9),
+
 },
 
  paper:{
@@ -191,7 +193,7 @@ roots:{
   fontFamily: "Garamond",
   color: COLORS.WHITE,
   fontWeight: 'bolder',
-  marginTop: theme.spacing(8)
+  marginTop: theme.spacing(5)
   
  },
  buttons:{

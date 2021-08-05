@@ -10,17 +10,12 @@
     
   }
 
-  .design2{
-    padding-top: 40px;
-    padding-right: 600px;
-    height: 320px;
-    width: 100%;
-    background-color: 'rgba(0, 0, 0, 0.5)';
-  }
+ 
   .homepage-pics{
-    background-image: url('../assets/image/eco-friendly.jpg'); 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../assets/image/eco-friendly.jpg'); 
     background-size: cover;
     height:400px;
+   
     margin-bottom: 10px;
   }
   .cards{
