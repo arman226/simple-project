@@ -1,5 +1,8 @@
 import React from 'react'
 import { Container, Grid, Box, Link} from "@material-ui/core";
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const footer = () => {
     return (
@@ -86,6 +89,11 @@ const footer = () => {
                                 </Box>
                         </Grid>
                     </Grid>
+                    <Box textAlign="center">
+                    <FacebookIcon fontSize="large" />
+                    <InstagramIcon fontSize="large" />
+                    <TwitterIcon fontSize="large" />
+                    </Box>
                     <Box textAlign="center" pt={{xs: 5, sm: 5 }} pb={{xs:5, sm: 0}}>
                         JohnDoe &reg; {new Date().getFullYear()}
                     </Box>
