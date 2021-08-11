@@ -5,7 +5,6 @@
     width: auto;
     margin-bottom: 30px;
     padding-top: 270px;
-    padding-left: 750px;
 }
 
 .who {
@@ -17,12 +16,22 @@
 .what {
     height: auto;
     width: auto;
-    margin-bottom: 0px;
 }
 
 .text {
     height: auto;
     width: auto;
+}
+
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%
+}
+  
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .bigtext {
@@ -32,4 +41,5 @@
 
 .content {
     height: 320px;
+    width: auto;
 }

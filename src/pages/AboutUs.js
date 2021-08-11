@@ -1,5 +1,6 @@
 import { React } from "react";
-import { Typography, makeStyles, Card, CardContent, CardMedia, Grid, Container, CardActionArea } from "@material-ui/core";
+import ReactPlayer from "react-player";
+import { Typography, makeStyles, Card, CardContent, CardMedia, Grid, Container, CardActionArea, Box } from "@material-ui/core";
 import './AboutUs.css';
 import { COLORS } from "../styles/color.styles";
 import tree from "../assets/image/trees1.jpg";
@@ -9,9 +10,8 @@ import community from "../assets/image/community.jpg";
 const AboutUs = () => {
 const classes = useStyles();
   return (
-    <div>
+    <div className="App">
       <div className="cover">
-        <div className={classes.root1}>
           <div className="content">
             <Grid 
               container
@@ -26,31 +26,44 @@ const classes = useStyles();
               </Grid>
             </Grid>
           </div>
-        </div>
-      </div>
+      </div>  
 
       <div className="who">
-        <Container className={classes.who} component="main" maxWidth="md" disableGutters>
+        <Container className={classes.who} component="main" maxWidth="xl" disableGutters>
           <Grid 
             container
             direction="column"
             justifyContent="center"
             alignItems="center"
           >
-            <Grid item>
-              <Typography className={classes.typo2}>Who We Are</Typography>
-            </Grid>
-            <Grid item>
-              <div className="text">
-                <Typography className={classes.typo3} component="p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie at elementum eu facilisis sed odio morbi quis commodo. Mauris a diam maecenas sed enim. 
-                  Ultrices vitae auctor eu augue ut lectus arcu bibendum. Quisque id diam vel quam elementum pulvinar etiam. Magna fermentum iaculis eu non diam phasellus vestibulum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. 
-                  Sit amet facilisis magna etiam tempor orci. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Dolor purus non enim praesent elementum facilisis leo. Leo urna molestie 
-                  at elementum eu facilisis sed. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Mi tempus imperdiet nulla malesuada pellentesque. Eget nunc scelerisque viverra mauris in 
-                  aliquam sem fringilla ut. A diam sollicitudin tempor id eu nisl nunc mi. Quam quisque id diam vel quam elementum pulvinar etiam. Amet purus gravida quis blandit turpis. Tincidunt eget nullam non nisi.
-                </Typography>
-              </div>  
-            </Grid>
+            <Typography className={classes.typo2}>Who We Are</Typography>
+            <Container maxWidth="md">
+              <Grid container spacing={2} justifyContent="center" alignItems="center">
+                <Grid item>
+                  <div className="text">
+                    <Typography className={classes.typo3} component="p">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie at elementum eu facilisis sed odio morbi quis commodo. Mauris a diam maecenas sed enim. 
+                      Ultrices vitae auctor eu augue ut lectus arcu bibendum. Quisque id diam vel quam elementum pulvinar etiam. Magna fermentum iaculis eu non diam phasellus vestibulum. Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. 
+                      Sit amet facilisis magna etiam tempor orci. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Dolor purus non enim praesent elementum facilisis leo. Leo urna molestie 
+                      at elementum eu facilisis sed. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Mi tempus imperdiet nulla malesuada pellentesque. Eget nunc scelerisque viverra mauris in 
+                      aliquam sem fringilla ut. A diam sollicitudin tempor id eu nisl nunc mi. Quam quisque id diam vel quam elementum pulvinar etiam. Amet purus gravida quis blandit turpis. Tincidunt eget nullam non nisi.
+                    </Typography>
+                  </div>  
+                  <div className='player-wrapper'>
+                    <ReactPlayer
+                      className='react-player'
+                      url='https://www.youtube.com/watch?v=nqye02H_H6I'
+                      width='100%'
+                      height='100%'
+                      controls
+                      autoplay
+                      muted
+                      loop
+                    />
+                  </div>
+                </Grid>
+              </Grid>
+            </Container>
           </Grid>
         </Container>
       </div>
@@ -65,10 +78,10 @@ const classes = useStyles();
           >
             <Typography className={classes.typo5}>What we want</Typography>
             <Container maxWidth="lg">
-              <Grid container spacing={10} justifyContent="center" alignItems="center">
+              <Grid container spacing={2} justifyContent="center" alignItems="center">
                 <Grid item>
                   <CardActionArea>
-                    <Card className={classes.card}>
+                    <Card className={classes.cardPic}>
                     <CardContent className={classes.content}>
                       <Typography className={classes.typo4}>A Healthy Planet</Typography>
                     <CardMedia
@@ -84,7 +97,7 @@ const classes = useStyles();
                 </Grid>
                 <Grid item>
                   <CardActionArea>
-                    <Card className={classes.card}>
+                    <Card className={classes.cardPic}>
                     <CardContent className={classes.content}>
                       <Typography className={classes.typo4}>A Clean Environment</Typography>
                     <CardMedia
@@ -100,7 +113,7 @@ const classes = useStyles();
                 </Grid>
                 <Grid item>
                   <CardActionArea>
-                    <Card className={classes.card}>
+                    <Card className={classes.cardPic}>
                     <CardContent className={classes.content}>
                       <Typography className={classes.typo4}>A Safe Community</Typography>
                     <CardMedia
@@ -140,13 +153,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Roboto',
     color: COLORS.BLACK,
     marginTop: '20px',
-    marginBottom: '20px',
+    marginBottom: '10px',
   },
 
   typo3: {
     flexGrow: 1,
     fontSize: 16,
     fontFamily: 'Cantarell',
+    margin: theme.spacing(5)
   },
 
   typo4: {
@@ -164,28 +178,36 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '20px',
   },
 
-  card: {
-    width: 300,
+  cardPic: {
+    width: 400,
     maxHeight: 500
+  },
+
+  cardVid: {
+    width: 450,
+    color: COLORS.WHITE,
+    backgroundColor: COLORS.GRAY,
   },
 
   media: {
     height: 200,
   },
 
+  video: {
+    marginTop:"10px",
+    height: 500,
+  },
+
   who: {
-    width: "auto",
+    maxWidth: "auto",
   },
 
   what: {
+    maxWidth: "auto",
     paddingBottom: "60px",
     backgroundColor: COLORS.GREEN3,
   },
-
-  root1: {
-    maxWidth: "auto",
-    paddingLeft: theme.spacing(8),
-  },
+  
 }));
 
 export default AboutUs;
