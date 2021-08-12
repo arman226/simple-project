@@ -1,5 +1,6 @@
 export const COLORS = {
   BLACK: "#000000",
+  BLACK1: "#2B2B2B",
   WHITE: "#FFFFFF",
   WHITE1: "#d7ded7",
   GRAY: "#444444",
@@ -24,5 +25,7 @@ export const COLORS = {
   YELLOW: "#E8FA72",
   YELLOW1: "#ECD662",
   VELVET: "#AE7C7C",
-  YELLOW2: "#f4ff9b"
+  YELLOW2: "#f4ff9b",
+  GREEEN_GRADIENT: "linear-gradient(to right bottom, #7FC8A9, #D5EEBB)",
+  GREEEN_GRADIENT1: "linear-gradient(to left bottom, #7FC8A9, #D5EEBB)"
 };

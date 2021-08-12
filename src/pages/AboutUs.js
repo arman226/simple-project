@@ -1,6 +1,6 @@
 import { React } from "react";
 import ReactPlayer from "react-player";
-import { Typography, makeStyles, Card, CardContent, CardMedia, Grid, Container, CardActionArea, Box } from "@material-ui/core";
+import { Typography, makeStyles, Card, CardContent, CardMedia, Grid, Container, CardActionArea, Paper } from "@material-ui/core";
 import './AboutUs.css';
 import { COLORS } from "../styles/color.styles";
 import tree from "../assets/image/trees1.jpg";
@@ -48,6 +48,11 @@ const classes = useStyles();
                       at elementum eu facilisis sed. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Mi tempus imperdiet nulla malesuada pellentesque. Eget nunc scelerisque viverra mauris in 
                       aliquam sem fringilla ut. A diam sollicitudin tempor id eu nisl nunc mi. Quam quisque id diam vel quam elementum pulvinar etiam. Amet purus gravida quis blandit turpis. Tincidunt eget nullam non nisi.
                     </Typography>
+                  </div>
+                  <div classname="plain_text">
+                    <Paper className={classes.paper} elevation={0}>
+                      <Typography className={classes.typo6}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A PLACE WHERE <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WE CAN REST</Typography>
+                    </Paper>
                   </div>  
                   <div className='player-wrapper'>
                     <ReactPlayer
@@ -61,6 +66,9 @@ const classes = useStyles();
                       loop
                     />
                   </div>
+                </Grid>
+                <Grid item>
+                  
                 </Grid>
               </Grid>
             </Container>
@@ -137,6 +145,17 @@ const classes = useStyles();
 };
 
 const useStyles = makeStyles((theme) => ({
+
+  paper: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    maxWidth: 'auto',
+    marginTop: '30px',
+    marginBottom: '30px',
+    background: COLORS.GREEEN_GRADIENT
+  },
+
   typo1: {
     flexGrow: 1,
     fontSize: 100,
@@ -148,18 +167,17 @@ const useStyles = makeStyles((theme) => ({
 
   typo2: {
     flexGrow: 1,
-    fontSize: 30,
+    fontSize: 50,
     fontWeight: 'bold',
-    fontFamily: 'Roboto',
-    color: COLORS.BLACK,
-    marginTop: '20px',
-    marginBottom: '10px',
+    fontFamily: 'Pathway Gothic One',
+    color: COLORS.BLACK1,
+    marginTop: '10px',
   },
 
   typo3: {
     flexGrow: 1,
-    fontSize: 16,
-    fontFamily: 'Cantarell',
+    fontSize: 20,
+    fontFamily: 'Pathway Gothic One',
     margin: theme.spacing(5)
   },
 
@@ -171,11 +189,21 @@ const useStyles = makeStyles((theme) => ({
 
   typo5: {
     flexGrow: 1,
-    fontSize: 30,
+    fontSize: 50,
     fontWeight: 'bold',
-    fontFamily: 'Roboto',
+    color: COLORS.BLACK1,
+    fontFamily: 'Pathway Gothic One',
     marginTop: '20px',
     marginBottom: '20px',
+  },
+
+  typo6: {
+    flexGrow: 1,
+    fontSize: 100,
+    fontWeight: 'bold',
+    color: COLORS.BLACK1,
+    fontFamily: 'Pathway Gothic One',
+    paddingRight: '80px'
   },
 
   cardPic: {
@@ -205,7 +233,7 @@ const useStyles = makeStyles((theme) => ({
   what: {
     maxWidth: "auto",
     paddingBottom: "60px",
-    backgroundColor: COLORS.GREEN3,
+    background: COLORS.GREEEN_GRADIENT1,
   },
   
 }));
