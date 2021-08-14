@@ -49,7 +49,7 @@ const classes = useStyles();
                       aliquam sem fringilla ut. A diam sollicitudin tempor id eu nisl nunc mi. Quam quisque id diam vel quam elementum pulvinar etiam. Amet purus gravida quis blandit turpis. Tincidunt eget nullam non nisi.
                     </Typography>
                   </div>
-                  <div classname="plain_text">
+                  <div className="plain_text">
                     <Paper className={classes.paper} elevation={0}>
                       <Typography className={classes.typo6}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A PLACE WHERE <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WE CAN REST</Typography>
                     </Paper>
@@ -61,9 +61,7 @@ const classes = useStyles();
                       width='100%'
                       height='100%'
                       controls
-                      autoplay
                       muted
-                      loop
                     />
                   </div>
                 </Grid>
@@ -153,7 +151,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 'auto',
     marginTop: '30px',
     marginBottom: '30px',
-    background: COLORS.GREEEN_GRADIENT
+    background: COLORS.GREEN_GRADIENT
   },
 
   typo1: {
@@ -233,7 +231,7 @@ const useStyles = makeStyles((theme) => ({
   what: {
     maxWidth: "auto",
     paddingBottom: "60px",
-    background: COLORS.GREEEN_GRADIENT1,
+    background: COLORS.GREEN_GRADIENT1,
   },
   
 }));
