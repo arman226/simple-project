@@ -29,4 +29,5 @@ export const COLORS = {
   GREEN_GRADIENT: "linear-gradient(to right bottom, #7FC8A9, #D5EEBB)",
   GREEN_GRADIENT1: "linear-gradient(to left bottom, #7FC8A9, #D5EEBB)",
   GREEN_GRADIENT2: "linear-gradient(to left, #558776, #7FC8A9)",
+  BLUE_GRADIENT: "linear-gradient(to right bottom, #96BAFF, #50CB93)",
 };

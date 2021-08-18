@@ -7,6 +7,7 @@ import Footer from "../components/footer";
 import Home from "../pages/Home";
 import AboutUs from "../pages/AboutUs";
 import ContactUs from "../pages/ContactUs";
+import Team from "../pages/Team";
 
 const RootRoute = () => {
   return (
@@ -16,6 +17,7 @@ const RootRoute = () => {
         <Route exact path='/Home' component={Home} />
         <Route exact path='/About' component={AboutUs} />
         <Route exact path='/Contact' component={ContactUs} />
+        <Route exact path='/Team' component={Team} />
       <Footer/>  
     </Router>
   );

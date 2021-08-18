@@ -25,6 +25,10 @@ const menu = [
     title: "Contact Us",
     component: "/Contact",
   },
+  {
+    title: "The Team",
+    component: "/Team",
+  },
 ];
 
 const NavMenu = () => {
