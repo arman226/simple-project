@@ -25,6 +25,10 @@ const menu = [
     title: "Contact Us",
     component: "/Contact",
   },
+  {
+    title: "The Team",
+    component: "/Team",
+  },
 ];
 
 const NavMenu = () => {
@@ -35,7 +39,7 @@ const NavMenu = () => {
     <AppBar
       elevation={0}
       position='fixed'
-      style={{ boxShadow: "none", background: COLORS.GREEN2 }}
+      style={{ boxShadow: "none", background: COLORS.GREEN_GRADIENT2 }}
     >
       <Navbar
         className='navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow'
