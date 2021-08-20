@@ -40,15 +40,17 @@ const Hero =({slides})=>{
            <div className="HeroWrapper">
              {slides.map((slide,index)=>{
                return(
-                <div className="HeroSlide" key={index} >
+                <div className={index ===current? 'HeroSlider': 'HeroSlider before' } key={index} >
                 {index === current &&(
-                        <div className="HeroSlider">
-                            <img src={slide.image } className="HeroImage"></img>
+                    <div className={index ===current? 'HeroSlider': 'HeroSlider before' }  key={index}>
+                            <img src={slide.image } className="HeroImage"></img> 
                         <div className="HeroContent">
                            <h1 className={classes.Heroh1} >{slide.title}</h1>
                            <p>{slide.details}</p>
                            </div>
                        </div>
+                     
+                      
                 )}
               </div>
              )})}

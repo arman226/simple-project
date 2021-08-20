@@ -24,9 +24,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    transition-duration: 1s;
+    transform: scale(1.09);
+  
 }
-.HeroSlider::before{
+.slides{
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+.slides.active{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.09);
+}
+.HeroSlider.before{
     content:  "";
     position: absolute;
     z-index: 2;
@@ -35,7 +46,9 @@
     bottom: 0vh;
     left: 0;
     overflow: hidden;
-    opacity: 0.4;
+    
+    opacity: 0;
+    transition-duration: 1s ease;
 }
 .HeroImage{
     position: absolute;
@@ -61,4 +74,6 @@
     right: 50px;
     display: flex;
     z-index: 10;
+    cursor: pointer;
+    user-select: none;
 }
