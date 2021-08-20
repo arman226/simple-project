@@ -28,15 +28,7 @@
     transform: scale(1.09);
   
 }
-.slides{
-    opacity: 0;
-    transition-duration: 1s ease;
-}
-.slides.active{
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.09);
-}
+
 .HeroSlider.before{
     content:  "";
     position: absolute;
@@ -70,8 +62,17 @@
 }
 .SliderButtons{
     position: absolute;
-  bottom: 50px;
+ 
     right: 50px;
+    display: flex;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.SliderButtons2{
+    position: absolute;
+ 
+    left: 50px;
     display: flex;
     z-index: 10;
     cursor: pointer;

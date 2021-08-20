@@ -25,14 +25,14 @@ const Hero = ()=>{
 
 const useStyles = makeStyles((theme)=>({
     HeroContainer:{
-       // background:'#0c0c0c',
+       
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
         padding: '0 1rem',
         position: 'relative',
-       // marginTop: '-80px',
+     
         color: '#fff'
 
     },

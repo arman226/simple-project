@@ -4,7 +4,8 @@ import {COLORS} from '../../styles/color.styles'
 import {makeStyles} from '@material-ui/core'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-
+import ArrowLeftRoundedIcon from '@material-ui/icons/ArrowLeftRounded';
+import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
 const Hero =({slides})=>{
     const classes = useStyles()
     const [current,setCurrent]= useState(0);
@@ -54,10 +55,13 @@ const Hero =({slides})=>{
                 )}
               </div>
              )})}
-             <div className="SliderButtons">
-                 <ArrowBackIosIcon  style={{ fontSize:'clamp(3rem,6vw,3rem)', color: COLORS.GREEN2 }}onClick={prevSlide}/>
-                 <ArrowForwardIosIcon  style={{ fontSize:'clamp(3rem,6vw,3rem)', color: COLORS.GREEN2  }}onClick={nextSlide}/>
-             </div>
+             <div className="SliderButtons2">
+                 <ArrowLeftRoundedIcon  style={{ fontSize:'clamp(7rem,5vw,9rem)', color: COLORS.GREEN6 }}onClick={prevSlide}/>
+                 </div><div className="SliderButtons">
+                     <ArrowRightRoundedIcon  style={{ fontSize:'clamp(7rem,5vw,9rem)', color: COLORS.GREEN6 }}onClick={nextSlide}/>
+                </div>
+            
+            
            </div>
        </div>
     )
