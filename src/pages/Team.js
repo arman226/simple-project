@@ -4,7 +4,9 @@ import { SliderImages } from '../components/SliderImages';
 
 const Team = () => {
     return (
+        <div>
         <TeamSlider slides={SliderImages} />
+        </div>
     )
 }
 

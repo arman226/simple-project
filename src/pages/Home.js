@@ -9,44 +9,21 @@ import plants from '../assets/image/plant.jpg'
 import mountains from '../assets/image/mountains.jpg'
 import ocean from '../assets/image/ocean.jpg'
 import {COLORS} from '../styles/color.styles'
+import Hero from '../components/HomepageComponents/Hero'
+import Banner from '../components/HomepageComponents/Styles/Banner'
+import { SliderData } from "../components/HomepageComponents/SliderData";
 
 const Home = () => {
   const classes = useStyles()
   return (
-    <div className="App">
-  
-   <div className="homepage-background">
-     <div className="design1">
-    <Container component="main" maxWidth="lg" className={classes.paper}>
-      
-        <Grid   container
-            direction="column"
-            justifyContent="center"
-            alignItems="center"
-            spacing={0}
-          >
-            <Grid item>
-             
-                <Typography className={classes.head}>
-                  Let's Protect our Nature
-                </Typography>
-        
-      </Grid>
-      <Grid item>
-      <Typography className={classes.headsecond}>Enjoy our nature while protecting it. <br/>Mother Earth needs help.</Typography>
-     
-      </Grid>
-      <div className={classes.backbutton}>
-      <Button variant="contained" className={classes.buttons}>GET STARTED <ArrowForwardIcon/></Button>
-      </div>
-      </Grid>
-        
-    </Container>
-    </div>
-  </div>
+    <div>
+      <Banner/>
+   
+   
+ 
   
  
-  <div className="cards">
+
   <Grid
   container
   direction="row"
@@ -131,32 +108,31 @@ const Home = () => {
     </Grid>
     </Grid>
   
-    </div>
+ 
     
     
 
 <Divider/>
-    <div className="homepage-pics">
- <div className={classes.roots}>
-<div className="design1">
-    <Container maxWidth="md" >
-      
-     <Typography className={classes.r3}>REDUCE</Typography>
-     <Typography className={classes.r3}>REUSE</Typography>
-     <Typography className={classes.r3}>RECYCLE</Typography>
-     
-    </Container>
-    </div>
-  </div>
-  </div>
+<div>
+  <Hero slides={SliderData}/>
+</div>
+
+   
   <Container component="main" maxWidth="md">
-    <Paper elevation={0}>
+    <Paper elevation={0} >
       <Typography component="h1" className={classes.bodyend}>If waste cannot be reduced or reused, then recycling is a great way to turn rubbish into something useful again. Recycling helps to ensure that materials such as paper, card, glass and metal can be turned into new products, reducing the need for virgin materials and preserving the planet's resources.
 </Typography>
     </Paper>
   </Container>
   <Divider/>
-    
+    <div className="imge">
+    <Typography variant="body1" className={classes.titles}>
+    We're passionate about helping our Mother Earth live healthier, longer lives.<br/>
+
+This digital experiences provides information, accountability and motivation towards
+taking good care of it. We are a small driven organization with an excellent team of environmental experts.
+    </Typography>
+    </div>
   </div>
   );
 };
@@ -165,7 +141,22 @@ const useStyles = makeStyles((theme) => ({
  paperContainer:{
    backgroundImage: {backgrounds}
  },
- root:{   maxWidth: 345
+ root:{   
+  borderRadius: "2rem",
+  marginTop: 'clamp(1.5rem,6vw,4rem)',
+  maxWidth: 365
+},
+
+titles: {
+padding: '0 1rem',
+marginTop: 150,
+
+textAlign:'center',
+fontSize: 'clamp(1rem,2vw,2rem)',
+  marginBottom: '1.5rem',
+  letterSpacing: '3px',
+  color: '#fff',
+  fontWeight: 500
 },
 roots:{
   maxWidth: 700,
