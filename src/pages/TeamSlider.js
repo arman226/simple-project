@@ -1,5 +1,5 @@
 import React, {useState} from "react"; 
-import { Container, Grid, Typography, makeStyles, Card, CardContent, CardMedia } from "@material-ui/core";
+import { makeStyles,} from "@material-ui/core";
 import { COLORS } from "../styles/color.styles";
 import { SliderImages } from '../components/SliderImages';
 import {FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa'
