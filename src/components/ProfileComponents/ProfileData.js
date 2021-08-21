@@ -10,7 +10,6 @@ const ProfileData= [
         position: 'Project Manager',
         image: Irish,
         school: 'STI College Cubao',
-       
     },
     {
         id:1,
@@ -26,7 +25,7 @@ const ProfileData= [
         image: Wes,
         school: 'STI College Cubao'
     },
-  
+
     {
         id:3,
         name: 'Ragub, Angelica F.',

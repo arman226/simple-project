@@ -13,13 +13,10 @@ export const SliderData=[
         path: '/',  
         image: background2
     },
-  
     {
         title: 'RECYCLE',
         path: '/',
         image: background,
         alt: 'back',
     },
-   
-   
 ]

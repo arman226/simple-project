@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from "react";
 import { makeStyles, Typography, Collapse, Grid, TextField, Button, createTheme, ThemeProvider} from "@material-ui/core";
 import { COLORS } from "../styles/color.styles";
-import './ContactUs.css';
 import universe from "../assets/video/video-1.mp4";
+import { motion } from 'framer-motion';
+import { animationOne } from '../animations';
 
+import './ContactUs.css';
 
 const ContactUs = () => {
   const classes = useStyles();
@@ -29,7 +31,7 @@ const initialValues = {
 }
 const [values,setValues] = useState(initialValues);
   return(
-      <div>
+      <motion.div initial="out" animate="in" exit="out" variants={animationOne}>
         <div className ="hero-container">
         <video src= {universe} autoPlay loop muted></video>
         <Collapse 
@@ -100,7 +102,7 @@ const [values,setValues] = useState(initialValues);
               </Grid>
           </Grid>
           </form>
-      </div>
+      </motion.div>
 
   ) 
 };
