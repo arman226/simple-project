@@ -2,9 +2,8 @@ import React,{useState} from 'react'
 import './Profile.css'
 import { makeStyles } from '@material-ui/core/styles';
 import {COLORS} from '../../styles/color.styles'
-import { Grid,Card,Container,CardMedia,DialogTitle,DialogActions, Typography,Button, Paper, Dialog } from '@material-ui/core';
-import { DialogContent } from '@material-ui/core';
-import ProfileData from './ProfileData';
+import { Grid,Container,DialogActions,Button, Paper, Dialog } from '@material-ui/core';
+
 
 
 
@@ -26,15 +25,13 @@ const Profile=({teamProfile})=>{
        
     }
 
-    
-   
     return(
         
        <div className="ProfileSection">
            <div className="Wrap">
-               <Grid container spacing={2}>
+               <Grid container spacing={1}>
            {teamProfile.map((persons,index)=>{
-               const {id,name}=persons;
+               
            
                return(
                   <Grid item key={index} xs={12} md={6} lg={3}>
@@ -51,17 +48,12 @@ const Profile=({teamProfile})=>{
                                 <h1>{persons.name}</h1>
                                 <h3>{persons.position}</h3>
                               
-                           
-                            
-                           
+                    
                             </div><div className={classes.bons}>
                             <Button variant="contained" className={classes.button} onClick={()=>clickMe(persons)}>See Details</Button>
                             </div>
                             </Paper>
                             </div>
-                        
-                           
-                        
                       
                  </Grid> 
                )
