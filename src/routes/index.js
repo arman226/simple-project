@@ -1,6 +1,6 @@
 import React from "react";
 import { Route } from "react-router";
-import { HashRouter as Router, Switch, useLocation } from "react-router-dom";
+import { Switch, useLocation } from "react-router-dom";
 import NavMenu from "../components/Navmenu";
 import Footer from "../components/footer";
 import { AnimatePresence } from "framer-motion";

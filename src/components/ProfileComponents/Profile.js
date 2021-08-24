@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import {COLORS} from '../../styles/color.styles'
 import { Grid,Container,DialogActions,Button, Paper, Dialog } from '@material-ui/core';
 import {FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa'
-import ProfileData from './ProfileData';
 import './Profile.css'
 
 
@@ -130,7 +129,6 @@ const useStyles = makeStyles((theme) => ({
     buttons:{
         fontSize:'clamp(1rem,2vw,1rem)',
         fontFamily:"Aharoni",
-        backgroundColor: '#fff',
         borderRadius: '2em',
         alignItems:"center",
         backgroundColor: COLORS.GREEN3
