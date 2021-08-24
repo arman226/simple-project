@@ -1,8 +1,7 @@
 import React from "react";
 import './Home.css'
 import '../App.css'
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import {makeStyles,Container,Paper, Typography,Button,Grid,Divider,
+import {makeStyles,Container,Paper, Typography,Grid,Divider,
 Card,CardContent,CardMedia} from '@material-ui/core'
 import backgrounds from '../assets/image/eco-friendly.jpg'
 import plants from '../assets/image/plant.jpg'

@@ -1,9 +1,7 @@
-import React, { useRef, useState,useEffect } from 'react'
-import './Hero.css'
-import {COLORS} from '../../styles/color.styles'
-import {makeStyles} from '@material-ui/core'
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import React, { useRef, useState,useEffect } from 'react';
+import './Hero.css';
+import {COLORS} from '../../styles/color.styles';
+import {makeStyles} from '@material-ui/core';
 import ArrowLeftRoundedIcon from '@material-ui/icons/ArrowLeftRounded';
 import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
 const Hero =({slides})=>{
@@ -44,7 +42,7 @@ const Hero =({slides})=>{
                 <div className={index ===current? 'HeroSlider': 'HeroSlider before' } key={index} >
                 {index === current &&(
                     <div className={index ===current? 'HeroSlider': 'HeroSlider before' }  key={index}>
-                            <img src={slide.image } className="HeroImage"></img> 
+                            <img src={slide.image } alt="img" className="HeroImage"></img> 
                         <div className="HeroContent">
                            <h1 className={classes.Heroh1} >{slide.title}</h1>
                            <p>{slide.details}</p>

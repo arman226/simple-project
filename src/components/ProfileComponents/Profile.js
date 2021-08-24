@@ -2,11 +2,7 @@ import React,{useState} from 'react'
 import './Profile.css'
 import { makeStyles } from '@material-ui/core/styles';
 import {COLORS} from '../../styles/color.styles'
-import { Grid,Card,Container,CardMedia,DialogTitle,DialogActions, Typography,Button, Paper, Dialog } from '@material-ui/core';
-import { DialogContent } from '@material-ui/core';
-import ProfileData from './ProfileData';
-
-
+import { Grid, Container, DialogActions, Button, Paper, Dialog } from '@material-ui/core';
 
 const Profile=({teamProfile})=>{
     const classes = useStyles();
@@ -43,7 +39,7 @@ const Profile=({teamProfile})=>{
                                  <Paper elevation={2}  >
                         <div className={classes.upper}>
                             <div className="imageContainer">
-                              <img src={persons.image} height="100px" width="100px"/>
+                              <img src={persons.image} alt="person" height="100px" width="100px"/>
                             </div>
                             </div>
                             <div className={classes.bot}>
@@ -75,7 +71,7 @@ const Profile=({teamProfile})=>{
                 <Container maxWidth="md" >
                     <div className={classes.bots}>
                     <div className="imageContainers">
-                        <img src={current.image}/>
+                        <img src={current.image} alt="test"/>
                     </div>
                 <h1>{current.name}</h1>
                 <h2>{current.position}</h2>
@@ -126,19 +122,16 @@ const useStyles = makeStyles((theme) => ({
         fontSize:'clamp(1rem,2vw,1rem)',
         fontFamily:"Aharoni",
         maxWidth:"md",
-        backgroundColor: '#fff',
         borderRadius: '3em',
         alignItems:"center",
-      backgroundColor: COLORS.GREEN3
+        backgroundColor: COLORS.GREEN3
     },
     buttons:{
         fontSize:'clamp(1rem,2vw,1rem)',
         fontFamily:"Aharoni",
-       
-        backgroundColor: '#fff',
         borderRadius: '2em',
         alignItems:"center",
-      backgroundColor: COLORS.GREEN3
+        backgroundColor: COLORS.GREEN3
     },
 
     bot:{

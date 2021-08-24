@@ -1,7 +1,7 @@
 import React from 'react'
 import nature from '../../../assets/video/backVid.mp4';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import {makeStyles,Container, Button} from '@material-ui/core'
+import {makeStyles, Button} from '@material-ui/core'
 import {COLORS} from '../../../styles/color.styles'
 
 const Hero = ()=>{  
@@ -86,9 +86,8 @@ const useStyles = makeStyles((theme)=>({
         fontSize:'clamp(1rem,3vw,2rem)',
         fontFamily:"Aharoni",
         maxWidth:"md",
-        backgroundColor: '#fff',
         borderRadius: '3em',
-      backgroundColor: COLORS.GREEN3
+        backgroundColor: COLORS.GREEN3
       },
     
 }))

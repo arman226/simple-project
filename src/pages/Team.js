@@ -1,7 +1,7 @@
 import React from 'react'
 import Profile from '../components/ProfileComponents/Profile'
 import ProfileData from '../components/ProfileComponents/ProfileData';
-import { makeStyles,Paper,Grid,Card, Container, Typography} from '@material-ui/core';
+import { makeStyles,Paper, Container } from '@material-ui/core';
 import "../App.css"
 import "./Team.css"
 const Team = ()=>{
