@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     fontSize: 19,
-    fontFamily: "Pathway Gothic One",
+    fontFamily: "Acme",
   },
 }));
 

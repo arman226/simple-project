@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     fontSize: 30,
     color: COLORS.WHITE,
-    fontFamily: "Pathway Gothic One",
+    fontFamily: "Acme",
   },
 
 }));

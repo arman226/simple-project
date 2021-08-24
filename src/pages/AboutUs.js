@@ -6,11 +6,14 @@ import { COLORS } from "../styles/color.styles";
 import tree from "../assets/image/trees1.jpg";
 import environment from "../assets/image/clean-environment.jpg";
 import community from "../assets/image/community.jpg";
+import { motion } from "framer-motion";
+import { animationOne, transition } from "../animations"
 
 const AboutUs = () => {
 const classes = useStyles();
   return (
-    <div className="App">
+    <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
+      <div className="App">
       <div className="cover">
           <div className="content">
             <Grid 
@@ -138,7 +141,8 @@ const classes = useStyles();
           </Grid>
         </Container>
       </div>
-    </div>
+      </div>
+    </motion.div>
   )
 };
 

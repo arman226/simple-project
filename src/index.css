@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Pathway+Gothic+One");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, "Pathway Gothic One", BlinkMacSystemFont,
+  font-family: -apple-system, "Pathway Gothic One", "Rampart One", "Fredoka One", "Acme", "Indie Flower", BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
