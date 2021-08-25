@@ -4,6 +4,10 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+.navbar-toggler {
+  border:0px;
+}
+
 body {
   font-family: "Pathway Gothic One";
 }

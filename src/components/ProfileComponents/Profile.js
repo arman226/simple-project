@@ -2,11 +2,7 @@ import React,{useState} from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import {COLORS} from '../../styles/color.styles'
 import { Grid,Container,DialogActions,Button, Paper, Dialog } from '@material-ui/core';
-<<<<<<< HEAD
-import {FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa'
-=======
 import ProfileData from './ProfileData';
->>>>>>> de02b31925f77d29237937d68aa5fd59b6594e27
 import './Profile.css'
 
 
