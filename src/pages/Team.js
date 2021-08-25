@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 import { animationOne } from '../animations';
 
 import "../App.css"
-import "./TeamSlider.css"
 const Team = ()=>{
     const classes =useStyles()
     return(
