@@ -2,7 +2,6 @@ import React,{useState} from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import {COLORS} from '../../styles/color.styles'
 import { Grid,Container,DialogActions,Button, Paper, Dialog } from '@material-ui/core';
-import {FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa'
 import ProfileData from './ProfileData';
 import './Profile.css'
 
@@ -10,8 +9,7 @@ import './Profile.css'
 const Profile=({teamProfile})=>{
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
-    const [current,setCurrent]= useState([0]);
-    const length = teamProfile.length
+    const [current,setCurrent]= useState(false)
     const handleClose = () => {
     setOpen(false);
     };
@@ -22,33 +20,15 @@ const Profile=({teamProfile})=>{
 
     }
 
-    const nextSlide = () => {
-        setCurrent(current === length - 1 ? 0 : current + 1)
-    };
-    
-    const prevSlide = () => {
-        setCurrent(current === 0 ? length - 1 : current - 1)
-    };
-    console.log(current)
-    if (!Array.isArray(teamProfile) || teamProfile.length <= 0) {
-        return null;
-    }
-
-
 
     return(
             
     <div className="ProfileSection">
         <div className="Wrap">
-            <section>
-            <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-            <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-            <Grid container spacing={3}>
-                {teamProfile.map((persons,index)=>{
-            const {id,name}=persons;
+            <Grid container spacing={4}>
+                {ProfileData.map((persons,index)=>{
                 return(
                     <Grid item key={index} xs={12} md={6} lg={3}>
-                    
                         <div className={classes.paper}>
                             <Paper elevation={2}>
                         <div className={classes.upper}>
@@ -69,7 +49,6 @@ const Profile=({teamProfile})=>{
                 )
             })}
             </Grid>
-            </section>
         </div>
             <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
                 <div className={classes.paper}>
@@ -117,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
     },
     paper:{
         marginTop: theme.spacing(3),
-        padding: theme.spacing(3) 
+        padding: theme.spacing(4) 
     },
     button:{
         fontSize:'clamp(1rem,2vw,1rem)',
