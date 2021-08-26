@@ -24,32 +24,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-duration: 1s;
-    transform: scale(1.09);
+    transition-duration: 2s;
+    transform: scale(1.08);
   
 }
 
 .HeroSlider.before{
-    content:  "";
+ 
     position: absolute;
     z-index: 2;
-    width: 100%;
+    width: 40%;
     height: 100vh;
     bottom: 0vh;
     left: 0;
     overflow: hidden;
     
-    opacity: 0;
-    transition-duration: 1s ease;
+    opacity: 10;
+    transition-duration: 2s ease;
 }
 .HeroImage{
-    position: absolute;
+    position:absolute;
     top:0;
+    align-items: center;
     left: 0;
-    width: 100vw;
+    width:100vw;
     height: 100vh;
     object-fit: cover;
  
+}
+.HeroImages{
+    align-items: center;
+    justify-content: center;
 }
 
 .HeroContent{

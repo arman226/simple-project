@@ -44,7 +44,7 @@ const Profile=({teamProfile})=>{
             <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
             <Grid container spacing={3}>
                 {teamProfile.map((persons,index)=>{
-            const {id,name}=persons;
+           
                 return(
                     <Grid item key={index} xs={12} md={6} lg={3}>
                     
@@ -53,7 +53,7 @@ const Profile=({teamProfile})=>{
                                 <div className={classes.pap}>
                         <div className={classes.upper}>
                             <div className="imageContainer">
-                            <img src={persons.image} height="100px" width="100px"/>
+                            <img src={persons.image} alt="images" height="100px" width="100px"/>
                             </div>
                             </div>
                             </div>
@@ -62,7 +62,7 @@ const Profile=({teamProfile})=>{
                                 <h3>{persons.position}</h3>
                             </div>
                             <div className={classes.bons}>
-                            <Button variant="contained" className={classes.button} onClick={()=>clickMe(persons)}>See Details</Button>
+                            <Button variant="contained" className={classes.buttons} onClick={()=>clickMe(persons)}>See Details</Button>
                             </div>
                             </Paper>
                             </div>
@@ -127,15 +127,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(3),
         
     },
-    button:{
-        fontSize:'clamp(1rem,2vw,1rem)',
-        fontFamily:"Aharoni",
-        maxWidth:"md",
-        backgroundColor: '#fff',
-        borderRadius: '3em',
-        alignItems:"center",
-        backgroundColor: COLORS.GREEN3
-    },
+    
     buttons:{
         fontSize:'clamp(1rem,2vw,1rem)',
         fontFamily:"Aharoni",

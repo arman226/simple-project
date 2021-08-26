@@ -44,7 +44,9 @@ const Hero =({slides})=>{
                 <div className={index ===current? 'HeroSlider': 'HeroSlider before' } key={index} >
                 {index === current &&(
                     <div className={index ===current? 'HeroSlider': 'HeroSlider before' }  key={index}>
+                            <div className="HeroImages">
                             <img src={slide.image } className="HeroImage"></img> 
+                            </div>
                         <div className="HeroContent">
                            <h1 className={classes.Heroh1} >{slide.title}</h1>
                            <p>{slide.details}</p>
