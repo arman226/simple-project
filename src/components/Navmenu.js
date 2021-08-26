@@ -51,8 +51,7 @@ const NavMenu = () => {
         <Container>
           <NavbarBrand tag={Link} to='/'>
             <div>
-              <Typography className={classes.title}> John Doe  <GiPalmTree  size= "1em" style={{ marginTop: "-20px" }}/> </Typography>
-              
+              <Typography className={classes.title}> John Doe  <GiPalmTree  size= "1em" style={{ marginTop: "-20px" }}/></Typography>
             </div>
           </NavbarBrand>
           <NavbarToggler
