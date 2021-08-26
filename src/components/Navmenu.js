@@ -34,7 +34,9 @@ const menu = [
 const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedPage, setSelectedPage] = useState("Home");
+  const toggle = () => setIsOpen(!isOpen);
   const classes = useStyles();
+
   return (
     <AppBar
       elevation={0}
@@ -43,7 +45,7 @@ const NavMenu = () => {
     >
       <Navbar
         className='navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow'
-        light
+        dark
       >
         <Container>
           <NavbarBrand tag={Link} to='/'>
@@ -53,11 +55,12 @@ const NavMenu = () => {
           </NavbarBrand>
           <NavbarToggler
             onClick={() => setIsOpen(!isOpen)}
-            className='mr-2 white '
+            className='navbar-toggler'
           />
           <Collapse
             className='d-sm-inline-flex flex-sm-row-reverse'
             isOpen={isOpen}
+            onClick={toggle}
             navbar
           >
             <ul className='navbar-nav flex-grow'>
@@ -85,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     fontSize: 30,
     color: COLORS.WHITE,
-    fontFamily: "Pathway Gothic One",
+    fontFamily: "Acme",
   },
 
 }));

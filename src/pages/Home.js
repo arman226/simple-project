@@ -13,6 +13,7 @@ import Banner from '../components/HomepageComponents/Styles/Banner'
 import { SliderData } from "../components/HomepageComponents/SliderData";
 import { motion } from 'framer-motion';
 import { animationOne } from '../animations';
+import { UncontrolledCarousel } from 'reactstrap';
 
 const Home = () => {
   const classes = useStyles()
@@ -127,7 +128,8 @@ const useStyles = makeStyles((theme) => ({
     root:{   
       borderRadius: "2rem",
       marginTop: 'clamp(1.5rem,6vw,4rem)',
-      maxWidth: 365
+      maxWidth: 365,
+      marginBottom: 'clamp(1.5rem,6vw,4rem)',
 },
 
     titles: {

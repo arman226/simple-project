@@ -1,71 +1,65 @@
-import React, { useRef, useState,useEffect } from 'react'
-import './Hero.css'
-import {COLORS} from '../../styles/color.styles'
-import {makeStyles} from '@material-ui/core'
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import React, { useRef, useState,useEffect } from 'react';
+import './Hero.css';
+import {COLORS} from '../../styles/color.styles';
+import {makeStyles} from '@material-ui/core';
 import ArrowLeftRoundedIcon from '@material-ui/icons/ArrowLeftRounded';
 import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
+import { UncontrolledCarousel } from 'reactstrap';
+import {
+    Carousel,
+    CarouselItem,
+    CarouselControl,
+    CarouselIndicators,
+    CarouselCaption
+  } from 'reactstrap';
 const Hero =({slides})=>{
     const classes = useStyles()
-    const [current,setCurrent]= useState(0);
-    const length = slides.length
-    const timeout = useRef(null)
-
-    useEffect(()=>{
-        const nextSlide=()=>{
-            setCurrent(current=>(current=== length-1?0:current+1))
-        }
-        timeout.current =setTimeout(nextSlide,3000)
-        return function(){
-            if(timeout.current){
-                clearTimeout(timeout.current)
-            }
-        }
-    },[current,length])
-
-    const nextSlide =()=>{
-        setCurrent(current=== length -1?0:current+1)
-        console.log(current)
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [animating, setAnimating] = useState(false);
+  
+    const next = () => {
+      if (animating) return;
+      const nextIndex = activeIndex === slides.length - 1 ? 0 : activeIndex + 1;
+      setActiveIndex(nextIndex);
     }
-    const prevSlide =()=>{
-        setCurrent(current=== 0?length -1:current-1);
-        console.log(current)
+  
+    const previous = () => {
+      if (animating) return;
+      const nextIndex = activeIndex === 0 ? slides.length - 1 : activeIndex - 1;
+      setActiveIndex(nextIndex);
     }
-    if(!Array.isArray(slides)|| slides.length<=0){
-        return null
+  
+    const goToIndex = (newIndex) => {
+      if (animating) return;
+      setActiveIndex(newIndex);
     }
-
-    return(
-       <div className="HeroSection">
-           <div className="HeroWrapper">
-             {slides.map((slide,index)=>{
-               return(
-                <div className={index ===current? 'HeroSlider': 'HeroSlider before' } key={index} >
-                {index === current &&(
-                    <div className={index ===current? 'HeroSlider': 'HeroSlider before' }  key={index}>
-                            <div className="HeroImages">
-                            <img src={slide.image } className="HeroImage"></img> 
-                            </div>
-                        <div className="HeroContent">
-                           <h1 className={classes.Heroh1} >{slide.title}</h1>
-                           <p>{slide.details}</p>
-                           </div>
-                       </div>
-                     
-                      
-                )}
-              </div>
-             )})}
-             <div className="SliderButtons2">
-                 <ArrowLeftRoundedIcon  style={{ fontSize:'clamp(7rem,5vw,9rem)', color: COLORS.GREEN6 }}onClick={prevSlide}/>
-                 </div><div className="SliderButtons">
-                     <ArrowRightRoundedIcon  style={{ fontSize:'clamp(7rem,5vw,9rem)', color: COLORS.GREEN6 }}onClick={nextSlide}/>
-                </div>
-            
-            
-           </div>
-       </div>
+  
+    const slide = slides.map((item) => {
+      return (
+        
+        <CarouselItem
+          onExiting={() => setAnimating(true)}
+          onExited={() => setAnimating(false)}
+          key={item.image}
+        >
+          <img src={item.image} alt={item.altText} className="HeroImage" />
+         <CarouselCaption captionText={item.title}  className={classes.Heroh1}/>
+        </CarouselItem>
+     
+      );
+    });
+  
+    return (
+      <Carousel
+        activeIndex={activeIndex}
+        next={next}
+        previous={previous}
+      >
+        <CarouselIndicators items={slides} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        {slide} 
+        <CarouselControl  direction="prev" directionText="Previous" onClickHandler={previous} />
+        <CarouselControl  direction="next" directionText="Next" onClickHandler={next} />
+      </Carousel>
     )
 }
 const useStyles = makeStyles((theme)=>({
@@ -90,7 +84,7 @@ const useStyles = makeStyles((theme)=>({
         backgroundColor: '#0c8w9s'
     },
     Heroh1:{
-        fontSize: 'clamp(2rem,8vw,6rem)',
+        fontSize: 'clamp(3rem,8vw,6rem)',
         marginBottom: '1.5rem',
         letterSpacing: '3px',
         padding: '0 1rem',

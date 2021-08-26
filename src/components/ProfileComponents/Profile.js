@@ -111,7 +111,6 @@ const useStyles = makeStyles((theme) => ({
     buttons:{
         fontSize:'clamp(1rem,2vw,1rem)',
         fontFamily:"Aharoni",
-        backgroundColor: '#fff',
         borderRadius: '2em',
         alignItems:"center",
         backgroundColor: COLORS.GREEN3

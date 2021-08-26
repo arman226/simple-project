@@ -43,14 +43,14 @@
     transition-duration: 2s ease;
 }
 .HeroImage{
-    position:absolute;
+  
     top:0;
     align-items: center;
     left: 0;
     width:100vw;
-    height: 100vh;
+    height: 80vh;
     object-fit: cover;
- 
+    -o-object-fit: cover;
 }
 .HeroImages{
     align-items: center;
