@@ -6,12 +6,11 @@ import { motion } from 'framer-motion';
 import { animationOne } from '../animations';
 
 import "../App.css"
-import "./TeamSlider.css"
 const Team = ()=>{
     const classes =useStyles()
     return(
     <motion.div initial="out" animate="in" exit="out" variants={animationOne}>
-        <Container component="main" maxWidth="xl">
+        <Container component="main" maxWidth="lg">
             <Paper className={classes.HeroContainer} elevation={0}>
                 <h1 className={classes.Heroh1}>TEAM PROFILE</h1>
             </Paper>
