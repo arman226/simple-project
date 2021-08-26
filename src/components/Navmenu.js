@@ -10,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import { COLORS } from "../styles/color.styles";
 import Item from "./Item";
+import { GiPalmTree } from 'react-icons/gi';
 import "./Navmenu.css";
 
 const menu = [
@@ -50,7 +51,8 @@ const NavMenu = () => {
         <Container>
           <NavbarBrand tag={Link} to='/'>
             <div>
-              <Typography className={classes.title}>John Doe</Typography>
+              <Typography className={classes.title}> John Doe  <GiPalmTree  size= "1em" style={{ marginTop: "-20px" }}/> </Typography>
+              
             </div>
           </NavbarBrand>
           <NavbarToggler

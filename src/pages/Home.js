@@ -13,7 +13,6 @@ import Banner from '../components/HomepageComponents/Styles/Banner'
 import { SliderData } from "../components/HomepageComponents/SliderData";
 import { motion } from 'framer-motion';
 import { animationOne } from '../animations';
-import { UncontrolledCarousel } from 'reactstrap';
 
 const Home = () => {
   const classes = useStyles()

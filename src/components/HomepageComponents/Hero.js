@@ -1,10 +1,8 @@
-import React, { useRef, useState,useEffect } from 'react';
+import React, {useState,} from 'react';
 import './Hero.css';
 import {COLORS} from '../../styles/color.styles';
 import {makeStyles} from '@material-ui/core';
-import ArrowLeftRoundedIcon from '@material-ui/icons/ArrowLeftRounded';
-import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
-import { UncontrolledCarousel } from 'reactstrap';
+
 import {
     Carousel,
     CarouselItem,
