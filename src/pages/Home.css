@@ -18,8 +18,8 @@ background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../
 display: flex;
 background-size: cover;
 height: auto;
-margin-bottom: 40px;
-margin-top: 50px;
+margin-bottom: 0px;
+margin-top: 0px;
 }
 
 

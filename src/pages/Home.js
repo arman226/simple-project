@@ -188,7 +188,8 @@ const useStyles = makeStyles((theme) => ({
  bodyend:{
   fontSize:20,
   fontFamily: "Pathway Gothic One",
-  marginBottom:theme.spacing(9)
+  marginTop:theme.spacing(5),
+  marginBottom:theme.spacing(5)
  }
 }));
 

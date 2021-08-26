@@ -57,10 +57,11 @@ const Profile=({teamProfile})=>{
                     <Container maxWidth="md" >
                         <div className={classes.bots}>
                             <div className="imageContainers">
-                            <img src={current.image}/>
+                            <img src={current.image} alt="current-img"/>
                             </div>
                         <h1>{current.name}</h1>
                         <h2>{current.position}</h2>
+                        <h5>{current.email}</h5>
                         <h6>{current.school}</h6>
                         </div>
                     </Container>

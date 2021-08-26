@@ -10,20 +10,23 @@ const ProfileData= [
         position: 'Project Manager',
         image: Irish,
         school: 'STI College Cubao',
+        email: 'irishfran777@gmail.com',
     },
     {
         id:1,
         name: 'Lim, Marcelo Jr.',
         position: 'Developer',
         image: Marcelo,
-        school: 'STI College Cubao'
+        school: 'STI College Cubao',
+        email: 'jmlimjr@gmail.com',
     },
     {
         id:2,
         name: 'Sta. Ana, Wesley',
         position: 'Developer',
         image: Wes,
-        school: 'STI College Cubao'
+        school: 'STI College Cubao',
+        email: 'artounaguel@gmail.com',
     },
 
     {
@@ -31,7 +34,8 @@ const ProfileData= [
         name: 'Ragub, Angelica F.',
         position: 'Developer',
         image: Angelica,
-        school: 'STI College Cubao'
+        school: 'STI College Cubao',
+        email: 'angelicaragub013@gmail.com',
     },
 ]
 export default ProfileData;
