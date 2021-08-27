@@ -10,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import { COLORS } from "../styles/color.styles";
 import Item from "./Item";
+import { GiPalmTree } from 'react-icons/gi';
 import "./Navmenu.css";
 
 const menu = [
@@ -25,35 +26,42 @@ const menu = [
     title: "Contact Us",
     component: "/Contact",
   },
+  {
+    title: "The Team",
+    component: "/Team",
+  },
 ];
 
 const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedPage, setSelectedPage] = useState("Home");
+  const toggle = () => setIsOpen(!isOpen);
   const classes = useStyles();
+
   return (
     <AppBar
       elevation={0}
       position='fixed'
-      style={{ boxShadow: "none", background: COLORS.WHITE }}
+      style={{ boxShadow: "none", background: COLORS.GREEN_GRADIENT2 }}
     >
       <Navbar
         className='navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow'
-        light
+        dark
       >
         <Container>
           <NavbarBrand tag={Link} to='/'>
             <div>
-              <Typography className={classes.title}>Basic App</Typography>
+              <Typography className={classes.title}> John Doe  <GiPalmTree  size= "1em" style={{ marginTop: "-20px" }}/></Typography>
             </div>
           </NavbarBrand>
           <NavbarToggler
             onClick={() => setIsOpen(!isOpen)}
-            className='mr-2 white '
+            className='navbar-toggler'
           />
           <Collapse
             className='d-sm-inline-flex flex-sm-row-reverse'
             isOpen={isOpen}
+            onClick={toggle}
             navbar
           >
             <ul className='navbar-nav flex-grow'>
@@ -79,9 +87,10 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     fontWeight: "bold",
-    fontSize: 25,
-    color: COLORS.BLACK,
-    fontFamily: "Pathway Gothic One",
+    fontSize: 30,
+    color: COLORS.WHITE,
+    fontFamily: "Acme",
   },
+
 }));
 export default NavMenu;
