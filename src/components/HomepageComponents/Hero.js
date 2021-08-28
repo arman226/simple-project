@@ -3,71 +3,89 @@ import './Hero.css';
 import {COLORS} from '../../styles/color.styles';
 import {makeStyles} from '@material-ui/core';
 import ArrowLeftRoundedIcon from '@material-ui/icons/ArrowLeftRounded';
+import Carousel from 'react-material-ui-carousel'
 import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
-import { UncontrolledCarousel } from 'reactstrap';
-import {
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption
-  } from 'reactstrap';
+
+
 const Hero =({slides})=>{
-    const classes = useStyles()
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [animating, setAnimating] = useState(false);
+  const classes = useStyles()
+  const [current,setCurrent]= useState(0);
+  const length =slides.length
+  const timeout = useRef(null)
+
+  useEffect(()=>{
+      const nextSlide=()=>{
+          setCurrent(current=>(current=== length-1?0:current+1))
+      }
+      timeout.current =setTimeout(nextSlide,3000)
+      return function(){
+          if(timeout.current){
+              clearTimeout(timeout.current)
+          }
+      }
+  },[current,length])
+
+  const nextSlide =()=>{
+      setCurrent(current=== length -1?0:current+1)
+      console.log(current)
+  }
+  const prevSlide =()=>{
+      setCurrent(current=== 0?length -1:current-1);
+      console.log(current)
+  }
+  if(!Array.isArray(slides)|| slides.length<=0){
+      return null
+  }
   
-    const next = () => {
-      if (animating) return;
-      const nextIndex = activeIndex === slides.length - 1 ? 0 : activeIndex + 1;
-      setActiveIndex(nextIndex);
-    }
-  
-    const previous = () => {
-      if (animating) return;
-      const nextIndex = activeIndex === 0 ? slides.length - 1 : activeIndex - 1;
-      setActiveIndex(nextIndex);
-    }
-  
-    const goToIndex = (newIndex) => {
-      if (animating) return;
-      setActiveIndex(newIndex);
-    }
-  
-    const slide = slides.map((item) => {
-      return (
-        
-        <CarouselItem
-          onExiting={() => setAnimating(true)}
-          onExited={() => setAnimating(false)}
-          key={item.image}
-        >
-          <img src={item.image} alt={item.altText} className="HeroImage" />
-         <CarouselCaption captionText={item.title}  className={classes.Heroh1}/>
-        </CarouselItem>
+  const Sides =(props)=>{
+    return(
+        <div className="HeroSection">
+       <div className="HeroWrapper">
+         
+         {slides.map((slide,index)=>{
+           return(
+            <div className="HeroSlide" key={index} >
+                
+            {index === current &&(
+                    <div className="HeroSlide">
+                        <img src={slide.image } className="HeroImage"></img>
+                    <div className={classes.HeroItems}>
+                       <h1 className={classes.Heroh1}>{slide.title}</h1>
+                       <p>{slide.details}</p>
+                       </div>
+                   </div>
+            )}
+          </div>
+         )})}
+         <div className="SliderButtons">
+             <ArrowRightRoundedIcon  style={{ fontSize:'clamp(3rem,6vw,3rem)', color: COLORS.GREEN3 }}onClick={prevSlide}/>
+             
+         </div>
+         <div className="SliderButtons2">
+         <ArrowLeftRoundedIcon  style={{ fontSize:'clamp(3rem,6vw,3rem)', color: COLORS.GREEN3 }}onClick={nextSlide}/>
+         </div>
      
-      );
-    });
-  
-    return (
-      <Carousel
-        activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-      >
-        <CarouselIndicators items={slides} activeIndex={activeIndex} onClickHandler={goToIndex} />
-        {slide} 
-        <CarouselControl  direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl  direction="next" directionText="Next" onClickHandler={next} />
-      </Carousel>
+       </div>
+   </div>
     )
+}
+  
+   
+        return(
+              
+          <Carousel>
+        {
+          slides.map((slide,index)=><Sides key={index} slide={slide}/>)
+        }
+        </Carousel>
+
+        )
 }
 const useStyles = makeStyles((theme)=>({
     HeroContent:{
-        zIndex: 4,
-        height: 'calc(100vh - 80px)',
-        maxHeight: '100%',
-        padding: '0rem calc((100vw - 1300px)/2)'
+        zIndex: 2,
+        height: 'calc(80vh - 80px)',
+        padding: '0rem calc((70vw - 700px)/2)'
     },
     HeroItems:{
         display: 'flex',
@@ -75,13 +93,18 @@ const useStyles = makeStyles((theme)=>({
         justifyContent: 'center',
         alignItems:'center',
         textAlign: 'center',
-        height: '100vh',
-        maxHeight: '100%',
-        padding: 0,
+        marginTop: '-110px',
+        padding: '0rem calc((70vw - 700px)/2)',
         color: '#fff',
         lineHeight: 1.1,
         fontWeight: 'bold',
         backgroundColor: '#0c8w9s'
+    },
+    heroItems:{
+      zIndex: 4,
+      height: 'calc(100vh - 80px)',
+      maxHeight: '100%',
+      padding: '0rem calc((100vw - 1300px)/2)'
     },
     Heroh1:{
         fontSize: 'clamp(3rem,8vw,6rem)',
@@ -92,5 +115,13 @@ const useStyles = makeStyles((theme)=>({
         color: COLORS.YELLOW2,
         textShadow: '2px 2px #000'
     },
+    HeroImages:{
+      alignItems:'center',
+      OObjectFit: 'cover',
+      objectFit: 'cover',
+      width: '100%',
+      height: '80vh'
+
+    }
 }))
 export default Hero

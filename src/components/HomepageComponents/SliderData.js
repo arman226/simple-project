@@ -6,17 +6,19 @@ export const SliderData=[
     {
         title: 'REDUCE',
         path: '/',
-        image: mountain
+        image: mountain,
+        altText: 'Reduce'
     },
     {
         title: 'REUSE',
         path: '/',  
-        image: background2
+        image: background2,
+        altText: 'Reuse'
     },
     {
         title: 'RECYCLE',
         path: '/',
         image: background,
-        alt: 'back',
+        altText: 'back',
     },
 ]
